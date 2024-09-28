@@ -4,12 +4,12 @@ import ring from "../Images/ring-pc.png";
 const Body = () => {
   return (
     <div className="text-center bg-white flex items-center justify-center">
-      <Image src={ring} alt="ring" className="w-1/2 p-4 mb-10" />
+      <Image src={ring} alt="ring" className="w-2/3 md:w-1/2 p-4 mb-10 mt-10 md:mt-0" />
 
-      <div className="absolute right-[8.5rem] top-[11.4rem] flex flex-col gap-2 items-start">
+      <div className="absolute  right-[0.1rem] top-[10rem] md:right-[8.5rem] md:top-[11.4rem] flex flex-col gap-2 items-start">
         <div className="flex items-center gap-2">
           <a
-            className="px-2 py-1 rounded-md text-black font-extralight text-[10px] bg-black/10 uppercase link-cover"
+            className="px-2 py-1 rounded-md text-black font-extralight text-[5px] md:text-[10px] bg-black/10 uppercase link-cover"
             href="#"
           >
             Open Source
@@ -26,17 +26,17 @@ const Body = () => {
             ></path>
           </svg>
         </div>
-        <p className="text-black  text-justify">
+        <p className="text-black md:text-[16px] text-[5px] text-justify">
           We build software, much of it open source,
           <br /> that aims to advance the frontier of crypto
           <br /> for everyone.
         </p>
       </div>
 
-      <div className="absolute right-[7.5rem] bottom-[3.5rem] flex flex-col gap-2 items-start">
+      <div className="absolute right-[0.1rem] bottom-[33rem] md:right-[7.5rem] md:bottom-[3.5rem] flex flex-col gap-2 items-start">
         <div className="flex items-center gap-2">
           <a
-            className="px-2 py-1 rounded-md text-black font-extralight text-[10px] bg-black/10 uppercase link-cover"
+            className="px-2 py-1 rounded-md text-black font-extralight text-[5px] md:text-[10px] bg-black/10 uppercase link-cover"
             href="#"
           >
             Collaborate with us
@@ -53,15 +53,15 @@ const Body = () => {
             ></path>
           </svg>
         </div>
-        <p className="text-black  text-justify">
+        <p className="text-black md:text-[16px] text-[5px] text-justify">
         We work with builders from day zero,<br/>whether you have an idea or want to work on<br/> one of ours.
         </p>
       </div>
 
-      <div className="absolute left-[8.8rem] top-[21rem] flex flex-col gap-2 items-start">
+      <div className="absolute left-[0.9rem] top-[13rem] md:left-[8.8rem] md:top-[21rem] flex flex-col gap-2 items-start">
         <div className="flex items-center gap-2">
           <a
-            className="px-2 py-1 rounded-md text-black font-extralight text-[10px] bg-black/10 uppercase link-cover"
+            className="px-2 py-1 rounded-md text-black font-extralight text-[5px] md:text-[10px] bg-black/10 uppercase link-cover"
             href="#"
           >
             About
@@ -78,7 +78,7 @@ const Body = () => {
             ></path>
           </svg>
         </div>
-        <p className="text-black  text-justify">
+        <p className="text-black md:text-[16px] text-[5px] text-justify">
         Paradigm is a research-driven crypto<br/>investment firm that funds<br/> companies and protocols from their<br/> earliest stages.
         </p>
       </div>

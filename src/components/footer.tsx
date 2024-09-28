@@ -1,7 +1,9 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-10 px-8">
-      <div className="flex flex-col font-mono lg:flex-row gap-96 items-start">
+      <div className="flex flex-col font-mono lg:flex-row md:gap-96 items-start">
         {/* Logo Section */}
         <div className="flex flex-col items-start space-y-6">
           <ul className="space-y-2 text-sm">
@@ -13,12 +15,12 @@ const Footer = () => {
         </div>
 
         {/* Middle Nav Links */}
-        <div className="flex flex-col lg:flex-row lg:space-x-16 gap-24  mt-8 lg:mt-0 text-sm">
+        <div className="flex flex-col lg:flex-row lg:space-x-16 gap-12 md:gap-24  mt-8 lg:mt-0 text-sm">
           <div className="flex flex-col space-y-2">
             <p className="font-bold">ABOUT</p>
             <p className="hover:underline cursor-pointer">Team</p>
             <p className="hover:underline cursor-pointer">Twitter</p>
-            <p className="hover:underline cursor-pointer">Contact</p>
+            <Link href={"/contact"} className="hover:underline cursor-pointer">Contact</Link>
           </div>
 
           <div className="flex flex-col space-y-2">

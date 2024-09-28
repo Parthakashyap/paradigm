@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ring from "../Images/landing-page.gif";
+import Link from "next/link";
 
 const LandingPage = () => {
   return (
@@ -12,7 +13,7 @@ const LandingPage = () => {
         <div className="flex justify-between items-center w-full px-10">
           <div>
             <span className="text-zinc-300">
-              Aegean · Incubations · Contact
+              <Link href={"/home"}>Aegean</Link>{" "} · <Link href={"/incubations"}>Incubations</Link> {" "}·   <Link href={"/contact"}>Contact</Link> {" "}
             </span>
             <p className="mt-4 text-zinc-300">
               Aegean is an investment firm that builds and invests in<br/>
