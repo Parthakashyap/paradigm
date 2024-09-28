@@ -3,11 +3,11 @@ import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
 // Import necessary loaders and effects
-// @ts-ignore
+// @ts-expect-error
 import { STLLoader } from 'three/examples/jsm/loaders/STLLoader';
-// @ts-ignore
+// @ts-expect-error
 import { AsciiEffect } from 'three/examples/jsm/effects/AsciiEffect';
-// @ts-ignore
+// @ts-expect-error
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 // Define the AsciiModelViewer component
@@ -59,7 +59,7 @@ const AsciiModelViewer: React.FC = () => {
     const loader = new STLLoader();
     loader.load(
       '/untitled1.stl', // Update this path
-      // @ts-ignore
+      // @ts-expect-error
       (geometry) => {
         // Center the geometry
         geometry.center();
