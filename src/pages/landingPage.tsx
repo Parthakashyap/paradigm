@@ -11,7 +11,7 @@ const LandingPage = () => {
         <p>New Delhi, India</p>
       </div>
 
-      <div className="flex-grow flex items-center justify-center">
+      <div className="flex-grow flex mb-32 items-center justify-center">
         <Image src={ring} alt="ring" className="w-96 p-4 mb-10" />
       </div>
 
