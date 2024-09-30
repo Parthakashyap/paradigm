@@ -88,7 +88,7 @@ const Body = () => {
             </svg>
           </div>
           <p className="text-black md:text-[16px] text-[5px] text-justify">
-            Paradigm is a research-driven AI
+            Aegean is a research-driven AI
             <br />
             investment firm that funds
             <br /> companies and protocols from their
@@ -181,7 +181,7 @@ const Body = () => {
             </svg>
           </div>
           <p className="text-black md:text-[16px] text-[10px] text-justify">
-            Paradigm is a research-driven AI
+            Aegean is a research-driven AI
             <br />
             investment firm that funds
             <br /> companies and protocols from their

@@ -16,19 +16,19 @@ const Contact = () => {
                     {/* Information Section */}
                     <div className="text-black">
                         <div className="text-xs lg:text-sm font-mono">Information</div>
-                        <div className="text-2xl lg:text-4xl py-2 font-serif">info@paradigm.xyz</div>
+                        <div className="text-2xl lg:text-4xl py-2 font-serif">info@Aegean.xyz</div>
                     </div>
 
                     {/* Press Inquiries Section */}
                     <div className="text-black">
                         <div className="text-xs lg:text-sm uppercase font-mono">Press Inquiries</div>
-                        <div className="text-2xl lg:text-4xl py-2 font-serif">press@paradigm.xyz</div>
+                        <div className="text-2xl lg:text-4xl py-2 font-serif">press@Aegean.xyz</div>
                     </div>
 
                     {/* Investor Inquiries Section */}
                     <div className="text-black">
                         <div className="text-xs lg:text-sm uppercase font-mono">Investor Inquiries</div>
-                        <div className="text-2xl lg:text-4xl py-2 font-serif">inv_inquiries@paradigm.xyz</div>
+                        <div className="text-2xl lg:text-4xl py-2 font-serif">inv_inquiries@Aegean.xyz</div>
                     </div>
 
                     {/* Divider Line */}
