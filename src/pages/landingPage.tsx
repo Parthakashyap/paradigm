@@ -25,7 +25,7 @@ const LandingPage = () => {
               <Link href={"/contact"}>Contact</Link>
             </span>
             <p className="mt-4 text-zinc-300">
-              Aegean is an investment firm that builds and invests in<br />
+              Aegean is an investment firm that builds and invests in
               internet, software, and technology-enabled companies.
             </p>
           </div>
