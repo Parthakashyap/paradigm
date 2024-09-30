@@ -12,7 +12,7 @@ const LandingPage = () => {
       </div>
 
       <div className="flex-grow flex mb-32 items-center justify-center">
-        <Image src={ring} alt="ring" className="w-96 p-4 mb-10" />
+        <Image src={ring} alt="ring" className="w-60 p-4 mb-10" />
       </div>
 
       <footer className="w-full text-white text-left p-6 absolute bottom-0 mb-10">
