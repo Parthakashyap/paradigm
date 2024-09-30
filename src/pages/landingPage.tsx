@@ -5,24 +5,32 @@ import Link from "next/link";
 const LandingPage = () => {
   return (
     <div className="text-center w-screen bg-black flex flex-col items-center justify-center min-h-screen">
+      
+      {/* New Delhi, India visible only on mobile */}
+      <div className="text-zinc-300 mt-6 mb-6 md:hidden">
+        <p>New Delhi, India</p>
+      </div>
+
       <div className="flex-grow flex items-center justify-center">
         <Image src={ring} alt="ring" className="w-96 p-4 mb-10" />
       </div>
 
       <footer className="w-full text-white text-left p-6 absolute bottom-0 mb-10">
         <div className="flex justify-between items-center w-full px-10">
-          <div>
+          
+          <div className="text-center md:text-left">
             <span className="text-zinc-300">
-              <Link href={"/home"}>Aegean</Link>{" "} · <Link href={"/incubations"}>Incubations</Link> {" "}·   <Link href={"/contact"}>Contact</Link> {" "}
+              <Link href={"/home"}>Aegean</Link> {" "}·{" "}
+              <Link href={"/incubations"}>Incubations</Link> {" "}·{" "}
+              <Link href={"/contact"}>Contact</Link>
             </span>
             <p className="mt-4 text-zinc-300">
-              Aegean is an investment firm that builds and invests in<br/>
+              Aegean is an investment firm that builds and invests in<br />
               internet, software, and technology-enabled companies.
             </p>
           </div>
-          <div className="text-right">
-            <p className="text-zinc-300">New Delhi, India 
-</p>
+          <div className="hidden md:block">
+            <p className="text-zinc-300">New Delhi, India</p>
           </div>
         </div>
       </footer>
