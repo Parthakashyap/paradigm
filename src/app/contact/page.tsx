@@ -1,15 +1,10 @@
-import Footer from "@/components/footer";
-import Navbar from "@/components/navbar";
 
 const Contact = () => {
     return (
         <div className="w-full min-h-screen bg-white">
-            <Navbar />
-            <div className="flex flex-col lg:flex-row items-start lg:items-start h-auto lg:h-screen p-6 lg:p-10 pt-20">
-                {/* Left Section - Contact Title */}
-                <div className="text-left text-black/20 font-serif text-3xl lg:text-4xl lg:pr-56 mb-10 lg:mb-0">
-                    Contact
-                </div>
+            
+            <div className="flex items-center justify-center h-auto lg:h-screen p-6 lg:p-10 pt-20">
+                
 
                 {/* Right Section - Contact Info */}
                 <div className="space-y-10 w-full lg:w-auto">
@@ -51,7 +46,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
+            
         </div>
     );
 };

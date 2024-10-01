@@ -10,18 +10,18 @@ const Body = () => {
         <Image
           src={ring}
           alt="ring"
-          className="w-2/3 md:w-1/2 p-4 mb-10 mt-10 md:mt-0"
+          className="w-2/3 md:w-[300rem] p-4 mb-10 mt-10 md:mt-0"
         />
 
-        <div className="absolute  right-[0.1rem] top-[10rem] md:right-[8.5rem] md:top-[11.4rem] flex flex-col gap-2 items-start">
+        <div className="absolute  right-[0.1rem] top-[10rem] md:right-[8.5rem] md:top-[12rem] flex flex-col gap-2 items-start">
           <Link href="/home">
           <div className="flex items-center gap-2">
-            <a
+            <Link
               className="px-2 py-1 rounded-md text-black font-extralight text-[5px] md:text-[10px] bg-black/10 uppercase link-cover"
               href="#"
             >
               Open Source
-            </a>
+            </Link>
             <svg
               width="12"
               height="6"
@@ -42,7 +42,7 @@ const Body = () => {
           </p>
         </div>
 
-        <div className="absolute right-[0.1rem] bottom-[33rem] md:right-[7.5rem] md:bottom-[3.5rem] flex flex-col gap-2 items-start">
+        <div className="absolute right-[0.1rem] bottom-[30rem] md:right-[7.5rem] md:bottom-[-2.5rem] flex flex-col gap-2 items-start">
           <Link href="/collaborate">
           <div className="flex items-center gap-2">
             <a
@@ -72,7 +72,7 @@ const Body = () => {
           </p>
         </div>
 
-        <div className="absolute left-[0.9rem] top-[13rem] md:left-[8.8rem] md:top-[21rem] flex flex-col gap-2 items-start">
+        <div className="absolute left-[0.9rem] top-[13rem] md:left-[8.8rem] md:top-[23rem] flex flex-col gap-2 items-start">
           <Link href="/about">
           <div className="flex items-center gap-2">
             <a
@@ -116,7 +116,7 @@ const Body = () => {
           className=" w-[100%] md:w-1/2 p-4 mb-10 mt-10 md:mt-0"
         />
 
-        <div className="absolute  left-[15%] top-[33%] md:right-[8.5rem] md:top-[11.4rem] flex flex-col gap-2 items-start">
+        <div className="absolute  left-[17%] top-[36%] md:right-[8.5rem] md:top-[11.4rem] flex flex-col gap-2 items-start">
             <Link href={"/home"}>
           <div className="flex items-center gap-2">
             <a
@@ -141,7 +141,7 @@ const Body = () => {
           
         </div>
 
-        <div className="absolute left-[20%] bottom-[6%] md:right-[7.5rem] md:bottom-[3.5rem] flex flex-col gap-2 items-start">
+        <div className="absolute left-[22%] bottom-[6%] md:right-[7.5rem] md:bottom-[3.5rem] flex flex-col gap-2 items-start">
           <Link href={"/collaborate"}>
           <div className="flex items-center gap-2">
             <a
@@ -171,7 +171,7 @@ const Body = () => {
           </p>
         </div>
 
-        <div className="absolute right-[15%] top-[20%] md:left-[8.8rem] md:top-[21rem] flex flex-col gap-2 items-start">
+        <div className="absolute right-[15%] top-[24%] md:left-[8.8rem] md:top-[21rem] flex flex-col gap-2 items-start">
           <Link href={"/about"}>
           <div className="flex items-center gap-2">
             <a
