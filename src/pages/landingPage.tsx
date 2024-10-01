@@ -12,7 +12,7 @@ const LandingPage = () => {
       </div>
 
       <div className="flex-grow flex mb-32 items-center justify-center">
-        <Image src={ring} alt="ring" className="w-60 p-4 mb-10" />
+        <Image src={ring} alt="ring" className="w-60 md:w-[21rem] p-4 md:mb-0 mb-10" />
       </div>
 
       <footer className="w-full text-white text-left p-6 absolute bottom-0 mb-10">
@@ -24,10 +24,12 @@ const LandingPage = () => {
               <Link href={"/incubations"}>Incubations</Link> {" "}·{" "}
               <Link href={"/contact"}>Contact</Link>
             </span>
+            <div className="md:w-[27.5rem]">
             <p className="mt-4 text-zinc-300">
               Aegean is an investment firm that builds and invests in
               internet, software, and technology-enabled companies.
             </p>
+            </div>
           </div>
           <div className="hidden md:block">
             <p className="text-zinc-300">New Delhi, India</p>

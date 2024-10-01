@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ring from "../Images/ring-pc.png";
 import ringm from "../Images/ring-mobile.png";
+import Link from "next/link";
 
 const Body = () => {
   return (
@@ -13,6 +14,7 @@ const Body = () => {
         />
 
         <div className="absolute  right-[0.1rem] top-[10rem] md:right-[8.5rem] md:top-[11.4rem] flex flex-col gap-2 items-start">
+          <Link href="/home">
           <div className="flex items-center gap-2">
             <a
               className="px-2 py-1 rounded-md text-black font-extralight text-[5px] md:text-[10px] bg-black/10 uppercase link-cover"
@@ -32,6 +34,7 @@ const Body = () => {
               ></path>
             </svg>
           </div>
+          </Link>
           <p className="text-black md:text-[16px] text-[5px] text-justify">
             We build software, much of it open source,
             <br /> that aims to advance the frontier of AI
@@ -40,6 +43,7 @@ const Body = () => {
         </div>
 
         <div className="absolute right-[0.1rem] bottom-[33rem] md:right-[7.5rem] md:bottom-[3.5rem] flex flex-col gap-2 items-start">
+          <Link href="/collaborate">
           <div className="flex items-center gap-2">
             <a
               className="px-2 py-1 rounded-md text-black font-extralight text-[5px] md:text-[10px] bg-black/10 uppercase link-cover"
@@ -59,6 +63,7 @@ const Body = () => {
               ></path>
             </svg>
           </div>
+          </Link>
           <p className="text-black md:text-[16px] text-[5px] text-justify">
             We work with builders from day zero,
             <br />
@@ -68,6 +73,7 @@ const Body = () => {
         </div>
 
         <div className="absolute left-[0.9rem] top-[13rem] md:left-[8.8rem] md:top-[21rem] flex flex-col gap-2 items-start">
+          <Link href="/about">
           <div className="flex items-center gap-2">
             <a
               className="px-2 py-1 rounded-md text-black font-extralight text-[5px] md:text-[10px] bg-black/10 uppercase link-cover"
@@ -87,6 +93,7 @@ const Body = () => {
               ></path>
             </svg>
           </div>
+          </Link>
           <p className="text-black md:text-[16px] text-[5px] text-justify">
             Aegean is a research-driven AI
             <br />
@@ -109,7 +116,8 @@ const Body = () => {
           className=" w-[100%] md:w-1/2 p-4 mb-10 mt-10 md:mt-0"
         />
 
-        <div className="absolute  left-[4rem] top-[18.3rem] md:right-[8.5rem] md:top-[11.4rem] flex flex-col gap-2 items-start">
+        <div className="absolute  left-[15%] top-[33%] md:right-[8.5rem] md:top-[11.4rem] flex flex-col gap-2 items-start">
+            <Link href={"/home"}>
           <div className="flex items-center gap-2">
             <a
               className="px-2 py-1 rounded-md text-black font-extralight text-[7px] md:text-[10px] bg-black/10 uppercase link-cover"
@@ -129,10 +137,12 @@ const Body = () => {
               ></path>
             </svg>
           </div>
+          </Link>
           
         </div>
 
-        <div className="absolute left-[5.5rem] bottom-[2rem] md:right-[7.5rem] md:bottom-[3.5rem] flex flex-col gap-2 items-start">
+        <div className="absolute left-[20%] bottom-[6%] md:right-[7.5rem] md:bottom-[3.5rem] flex flex-col gap-2 items-start">
+          <Link href={"/collaborate"}>
           <div className="flex items-center gap-2">
             <a
               className="px-2 py-1 rounded-md text-black font-extralight text-[7px] md:text-[10px] bg-black/10 uppercase link-cover"
@@ -152,6 +162,7 @@ const Body = () => {
               ></path>
             </svg>
           </div>
+          </Link>
           <p className="text-black md:text-[16px] text-[10px] text-justify">
             We work with builders from day zero,
             <br />
@@ -160,7 +171,8 @@ const Body = () => {
           </p>
         </div>
 
-        <div className="absolute right-[3rem] top-[11.2rem] md:left-[8.8rem] md:top-[21rem] flex flex-col gap-2 items-start">
+        <div className="absolute right-[15%] top-[20%] md:left-[8.8rem] md:top-[21rem] flex flex-col gap-2 items-start">
+          <Link href={"/about"}>
           <div className="flex items-center gap-2">
             <a
               className="px-2 py-1 rounded-md text-black font-extralight text-[7px] md:text-[10px] bg-black/10 uppercase link-cover"
@@ -180,6 +192,7 @@ const Body = () => {
               ></path>
             </svg>
           </div>
+          </Link>
           <p className="text-black md:text-[16px] text-[10px] text-justify">
             Aegean is a research-driven AI
             <br />
