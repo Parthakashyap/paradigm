@@ -32,7 +32,7 @@ const Navbar = () => {
             <Link href="/portfolio" className="hover:underline transition">Portfolio</Link>
             <Link href="/collaborate" className="hover:underline transition">Collaborate</Link>
             <Link href="/careers" className="hover:underline transition">Careers</Link>
-            <Link href="/contact" className="hover:underline transition">Contact</Link>
+            <Link href="/contact-us" className="hover:underline transition">Contact</Link>
           </div>
         </div>
 
