@@ -1,21 +1,26 @@
 "use client";
-import React, { useEffect, useRef } from 'react';
-import * as THREE from 'three';
+import React, { useEffect, useRef } from "react";
+import * as THREE from "three";
 
 // Import necessary loaders and effects
 // @ts-expect-error
-import { STLLoader } from 'three/examples/jsm/loaders/STLLoader';
+import { STLLoader } from "three/examples/jsm/loaders/STLLoader";
 // @ts-expect-error
-import { AsciiEffect } from 'three/examples/jsm/effects/AsciiEffect';
+import { AsciiEffect } from "three/examples/jsm/effects/AsciiEffect";
 // @ts-expect-error
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import Link from "next/link";
 
 // Define the AsciiModelViewer component
 const AsciiModelViewer: React.FC = () => {
   const mountRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    let scene: THREE.Scene, camera: THREE.PerspectiveCamera, renderer: THREE.WebGLRenderer, effect: AsciiEffect, controls: OrbitControls;
+    let scene: THREE.Scene,
+      camera: THREE.PerspectiveCamera,
+      renderer: THREE.WebGLRenderer,
+      effect: AsciiEffect,
+      controls: OrbitControls;
     let mesh: THREE.Mesh | null = null; // Declare mesh variable to hold the loaded model
 
     const width = window.innerWidth;
@@ -39,10 +44,10 @@ const AsciiModelViewer: React.FC = () => {
     }
 
     // Set up ASCII effect
-    effect = new AsciiEffect(renderer, ' .:-+*=%@#', { invert: true });
+    effect = new AsciiEffect(renderer, " .:-+*=%@#", { invert: true });
     effect.setSize(width, height);
-    effect.domElement.style.color = 'black';
-    effect.domElement.style.backgroundColor = 'white';
+    effect.domElement.style.color = "black";
+    effect.domElement.style.backgroundColor = "white";
 
     // Replace renderer's canvas with ASCII effect canvas
     if (mountRef.current) {
@@ -58,7 +63,7 @@ const AsciiModelViewer: React.FC = () => {
     // Load STL model
     const loader = new STLLoader();
     loader.load(
-      '/untitled1.stl', // Update this path
+      "/untitled1.stl", // Update this path
       // @ts-expect-error
       (geometry) => {
         // Center the geometry
@@ -69,16 +74,16 @@ const AsciiModelViewer: React.FC = () => {
 
         // Adjust the model's rotation to correct orientation
         mesh.rotation.x = -Math.PI / 2; // Rotate -90 degrees around x-axis
-        mesh.rotation.z = Math.PI;      // Rotate 180 degrees around z-axis
+        mesh.rotation.z = Math.PI; // Rotate 180 degrees around z-axis
 
         scene.add(mesh);
       },
-      (xhr:any) => {
+      (xhr: any) => {
         // Optional: Show loading progress
         console.log(`${(xhr.loaded / xhr.total) * 100}% loaded`);
       },
-      (error:any) => {
-        console.error('An error happened while loading the STL model', error);
+      (error: any) => {
+        console.error("An error happened while loading the STL model", error);
       }
     );
 
@@ -107,17 +112,35 @@ const AsciiModelViewer: React.FC = () => {
       renderer.setSize(width, height);
       effect.setSize(width, height);
     };
-    window.addEventListener('resize', onWindowResize, false);
+    window.addEventListener("resize", onWindowResize, false);
 
     // Clean up on unmount
     return () => {
-      window.removeEventListener('resize', onWindowResize);
+      window.removeEventListener("resize", onWindowResize);
       controls.dispose();
       renderer.dispose();
     };
   }, []);
 
-  return <div ref={mountRef} />;
+  return (
+    <div ref={mountRef} className="relative w-full h-full">
+      <div className="md:flex hidden">
+      <Link href={"/home"} className="absolute bottom-24 left-8 p-2 text-black">Aegean</Link>
+      <div className="absolute bottom-6 left-8 text-black text-sm font-mono w-96 p-2 rounded-md">
+        We partner with founders to explore new ideas, build exceptional
+        products, and launch world-class companies.
+      </div>
+      </div>
+      <div className="md:hidden flex">
+      <Link href={"/home"} className="absolute bottom-24 left-44 text-center text-black">Aegean</Link>
+      <div className="absolute bottom-5 left-5 text-center text-black text-sm font-mono w-96 p-2 rounded-md">
+        We partner with founders to explore new ideas, build exceptional
+        products, and launch world-class companies.
+      </div>
+
+      </div>
+    </div>
+  );
 };
 
 export default AsciiModelViewer;
