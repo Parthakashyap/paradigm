@@ -5,7 +5,8 @@ const Contact = () => {
     return (
         <div className="w-full min-h-screen bg-white">
             <Navbar />
-            <div className="flex flex-col lg:flex-row items-start lg:items-start h-auto lg:h-screen p-6 lg:p-10 pt-20">
+            <div className="pt-20">
+            <div className="flex  flex-col lg:flex-row items-start lg:items-start h-auto lg:h-screen p-6 lg:p-10 pt-20">
                 {/* Left Section - Contact Title */}
                 <div className="text-left text-black/20 font-serif text-3xl lg:text-4xl lg:pr-56 mb-10 lg:mb-0">
                     Contact
@@ -50,6 +51,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
             <Footer />
         </div>

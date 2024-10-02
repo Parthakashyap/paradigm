@@ -1,19 +1,51 @@
 "use client";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <div className={`${isOpen ? 'bg-white' : 'bg-white'}  transition-colors duration-300 relative`}>
+    <div className={`${isOpen ? 'bg-white' : 'bg-white'} transition-colors duration-300 relative`}>
       <nav className={`text-white md:text-black`}>
         {/* Wrapper */}
-        <div className="flex justify-between items-center px-8 py-6">
+        <div className="flex justify-between items-center px-8 py-6 fixed top-0 left-0 right-0 z-50">
           {/* Logo */}
           <Link href="/home" className="flex items-center space-x-2">
-            <span className={`font-serif text-3xl ${isOpen ? 'text-white' : 'text-black'} font-thin`}>Aegean</span>
+            <span className="relative">
+              {/* First Letter */}
+              <span className={`font-serif text-4xl ${isOpen ? 'text-white' : 'text-black'} font-semibold tracking-wide`}>
+                A
+              </span>
+              {/* Rest of the text */}
+              <span
+                className={`font-serif text-4xl ${isOpen ? 'text-white' : 'text-black'} font-light tracking-tight transition-transform duration-300`}
+                style={{
+                  transform: `translateX(${scrollPosition > 50 ? '-2rem' : '0'})`,
+                  opacity: scrollPosition > 50 ? 0 : 1,
+                  transition: 'transform 0.3s ease-in-out, opacity 0.3s ease-in-out',
+                  position: 'absolute',
+                }}
+              >
+                egean
+              </span>
+            </span>
           </Link>
+
+          {/* Text "Aegean" on top right */}
+          <div className="hidden md:block text-white text-2xl font-mono absolute top-2 right-8">Aegean</div>
 
           {/* Hamburger Icon (visible on small screens) */}
           <div className="md:hidden z-50">
@@ -39,6 +71,9 @@ const Navbar = () => {
         {/* Collapsible Mobile Menu (visible on small screens) */}
         {isOpen && (
           <div className="fixed inset-0 z-50 flex flex-col justify-center items-center bg-black text-white w-full h-full transition-all duration-300">
+            <Link href="/home" className='font-serif absolute top-6 left-6 text-white  text-4xl'>
+              Aegean
+            </Link>
             <button onClick={() => setIsOpen(false)} className="absolute top-6 right-6 text-white text-3xl">
               &#10005;
             </button>

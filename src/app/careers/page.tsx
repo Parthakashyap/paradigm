@@ -26,7 +26,7 @@ const Careers = () => {
   return (
     <div>
       <Navbar />
-      <div className="flex flex-col lg:flex-row p-2 pt-10 bg-white min-h-screen font-mono">
+      <div className="flex flex-col lg:flex-row p-2 pt-24 bg-white min-h-screen font-mono">
         {/* Left Sidebar for large screens */}
         {!isMobile && (
           <div className="w-full lg:w-1/4 p-4">

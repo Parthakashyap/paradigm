@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Body = () => {
   return (
-    <div>
+    <div className="pt-20">
       <div className="text-center bg-white hidden md:flex items-center justify-center">
         <Image
           src={ring}
