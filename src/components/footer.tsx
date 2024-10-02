@@ -7,10 +7,16 @@ const Footer = () => {
         {/* Logo Section */}
         <div className="flex flex-col items-start space-y-6">
           <ul className="space-y-2 text-sm">
+            <li>
             <Link href={"/terms"} className="hover:underline cursor-pointer">Terms</Link>
-            <li className="hover:underline cursor-pointer">Disclosures</li>
-            <li className="hover:underline cursor-pointer">Privacy</li>
-            <li className="hover:underline cursor-pointer">CA Privacy</li>
+            </li>
+            <li>
+            <Link href={"/disclosures"} className="hover:underline cursor-pointer">Disclosures</Link>
+            </li>
+            <li>
+              <Link href={"/privacy"} className="hover:underline cursor-pointer">Privacy</Link>
+              </li>
+            {/* <li className="hover:underline cursor-pointer">CA Privacy</li> */}
           </ul>
         </div>
 
