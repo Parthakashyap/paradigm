@@ -5,7 +5,7 @@ const Portfolio = () => {
   return (
     <div className="w-full h-screen bg-white">
       <Navbar />
-      <div className="bg-white pt-12">
+      <div className="bg-white min-h-screen flex flex-col justify-center pt-12">
         <div className="flex justify-center items-start flex-col mx-auto max-w-3xl h-full p-10 mb-20 space-y-6">
           <h1 className="text-4xl font-serif text-black leading-tight">
             Aegean believes that intelligent software will power the future of

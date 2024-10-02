@@ -27,7 +27,7 @@ const Navbar = () => {
             <span className="relative">
               {/* First Letter */}
               <span className={`font-serif text-4xl ${isOpen ? 'text-white' : 'text-black'} font-semibold tracking-wide`}>
-                A
+              {scrollPosition > 50 ? 'A\\' : 'A'}
               </span>
               {/* Rest of the text */}
               <span
@@ -70,14 +70,14 @@ const Navbar = () => {
 
         {/* Collapsible Mobile Menu (visible on small screens) */}
         {isOpen && (
-          <div className="fixed inset-0 z-50 flex flex-col justify-center items-center bg-black text-white w-full h-full transition-all duration-300">
+          <div className="fixed inset-0 z-50 flex flex-col  items-start bg-black text-white w-full h-full transition-all duration-300">
             <Link href="/home" className='font-serif absolute top-6 left-6 text-white  text-4xl'>
               Aegean
             </Link>
             <button onClick={() => setIsOpen(false)} className="absolute top-6 right-6 text-white text-3xl">
               &#10005;
             </button>
-            <div className="flex flex-col space-y-8 text-2xl font-mono">
+            <div className="flex flex-col space-y-8 text-2xl font-mono p-8 mt-32">
               <Link href="/about" className="hover:underline transition" onClick={() => setIsOpen(false)}>About</Link>
               <Link href="/portfolio" className="hover:underline transition" onClick={() => setIsOpen(false)}>Portfolio</Link>
               <Link href="/collaborate" className="hover:underline transition" onClick={() => setIsOpen(false)}>Collaborate</Link>

@@ -42,7 +42,7 @@ const Body = () => {
           </p>
         </div>
 
-        <div className="absolute right-[0.1rem] bottom-[30rem] md:right-[7.5rem] md:bottom-[-2.5rem] flex flex-col gap-2 items-start">
+        <div className="absolute right-[0.1rem] bottom-[30rem] md:right-[7.5rem] md:bottom-[17%] flex flex-col gap-2 items-start">
           <Link href="/collaborate">
           <div className="flex items-center gap-2">
             <a

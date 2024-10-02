@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const LandingPage = () => {
   return (
-    <div className="text-center w-screen bg-black flex flex-col items-center justify-center min-h-screen">
+    <div className="text-center w-screen  flex flex-col items-center justify-center min-h-screen">
       
       {/* New Delhi, India visible only on mobile */}
       <div className="text-zinc-300 mt-6 mb-6 md:hidden">
@@ -12,7 +12,9 @@ const LandingPage = () => {
       </div>
 
       <div className="flex-grow flex  items-center justify-center">
-        <Image src={ring} alt="ring" className="w-96 md:w-[21rem] p-4 md:mb-0 mb-10" />
+        {/* <Image src={ring} alt="ring" className="w-96 md:w-[21rem] p-4 md:mb-0 mb-10" /> */}
+
+        <h1 className=" text-[15rem] lg:text-[30rem] text-red-600 font-bold">A\</h1>
       </div>
 
       <footer className="w-full text-white text-left p-6 absolute bottom-0 mb-10">

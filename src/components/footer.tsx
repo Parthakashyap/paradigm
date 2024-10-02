@@ -7,7 +7,7 @@ const Footer = () => {
         {/* Logo Section */}
         <div className="flex flex-col items-start space-y-6">
           <ul className="space-y-2 text-sm">
-            <li className="hover:underline cursor-pointer">Terms</li>
+            <Link href={"/terms"} className="hover:underline cursor-pointer">Terms</Link>
             <li className="hover:underline cursor-pointer">Disclosures</li>
             <li className="hover:underline cursor-pointer">Privacy</li>
             <li className="hover:underline cursor-pointer">CA Privacy</li>
@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
 
         {/* Middle Nav Links */}
-        <div className="flex flex-col lg:flex-row lg:space-x-16 gap-12 md:gap-24  mt-8 lg:mt-0 text-sm">
+        {/* <div className="flex flex-col lg:flex-row lg:space-x-16 gap-12 md:gap-24  mt-8 lg:mt-0 text-sm">
           <div className="flex flex-col space-y-2">
             <p className="font-bold">ABOUT</p>
             <p className="hover:underline cursor-pointer">Team</p>
@@ -34,7 +34,7 @@ const Footer = () => {
             <p className="hover:underline cursor-pointer">Careers</p>
             <p className="hover:underline cursor-pointer">Warpcast</p>
           </div>
-        </div>
+        </div> */}
 
         
       </div>

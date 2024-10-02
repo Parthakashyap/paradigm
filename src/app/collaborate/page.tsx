@@ -6,7 +6,7 @@ const collaborate = () => {
     <div className="w-full h-screen bg-white">
       <Navbar />
       <div className="bg-white pt-12">
-        <div className="flex justify-center items-start flex-col mx-auto max-w-3xl h-full p-10 mb-20 space-y-6">
+        <div className="flex justify-center min-h-screen items-start flex-col mx-auto max-w-3xl h-full p-10 mb-20 space-y-6">
           <h1 className="text-4xl font-serif text-black leading-tight">
             Aegean is a research- driven crypto investment firm.
           </h1>
