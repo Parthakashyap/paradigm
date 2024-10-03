@@ -141,7 +141,7 @@ const Body = () => {
           
         </div>
 
-        <div className="absolute left-[25%] bottom-[-2%] md:right-[7.5rem] md:bottom-[3.5rem] flex flex-col gap-2 items-start">
+        <div className="absolute left-[25%] bottom-[-3.5%] md:right-[7.5rem] md:bottom-[3.5rem] flex flex-col gap-2 items-start">
           
           <div className="flex items-center gap-2">
             <a
