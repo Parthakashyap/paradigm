@@ -58,7 +58,7 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom Section */}
-      <div className="mt-10 text-xs text-center">
+      <div className="mt-10 text-xs font-mono text-center">
         <p>Copyright © 2024 Aegean Operations LP All rights reserved.</p>
         <p>
           “Aegean” is a trademark, and the triangular mobius symbol is a
