@@ -24,18 +24,18 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row lg:space-x-16 gap-2 md:gap-24  mt-0 lg:mt-0 text-sm">
           <div className="flex flex-col space-y-2">
             <Link href={"/about"} className="font-bold">ABOUT</Link>
+            <Link href={"/portfolio"} className="font-bold">PORTFOLIO</Link>
+            
+          </div>
+
+          <div className="flex flex-col space-y-2">
+          <Link href={"/collaborate"} className="font-bold">COLLABORATE</Link>
             <Link href={"/careers"} className="font-bold">CARRERS</Link>
             
-          </div>
-
-          <div className="flex flex-col space-y-2">
-            <Link href={"/portfolio"} className="font-bold">PORTFOLIO</Link>
-            <Link href={"/contact"} className="font-bold">CONTACT</Link>
             
           </div>
-
           <div className="flex flex-col space-y-2">
-            <Link href={"/collaborate"} className="font-bold">COLLABORATE</Link>
+          <Link href={"/contact"} className="font-bold">CONTACT</Link>
           </div>
         </div>
 
