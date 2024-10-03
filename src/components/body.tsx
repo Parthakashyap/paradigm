@@ -14,13 +14,13 @@ const Body = () => {
         />
 
         <div className="absolute  right-[0.1rem] top-[10rem] md:right-[8.5rem] md:top-[12rem] flex flex-col gap-2 items-start">
-          <Link href="/home">
+          <Link href="/portfolio">
           <div className="flex items-center gap-2">
             <Link
               className="px-2 py-1 rounded-md text-black font-extralight text-[5px] md:text-[10px] bg-black/10 uppercase link-cover"
               href="#"
             >
-              Open Source
+              Portfolio
             </Link>
             <svg
               width="12"
@@ -42,14 +42,14 @@ const Body = () => {
           </p>
         </div>
 
-        <div className="absolute right-[0.1rem] bottom-[30rem] md:right-[7.5rem] md:bottom-[17%] flex flex-col gap-2 items-start">
-          <Link href="/collaborate">
+        <div className="absolute right-[0.1rem] bottom-[30rem] md:right-[7.5rem] md:bottom-[-5%] flex flex-col gap-2 items-start">
+          
           <div className="flex items-center gap-2">
             <a
               className="px-2 py-1 rounded-md text-black font-extralight text-[5px] md:text-[10px] bg-black/10 uppercase link-cover"
               href="#"
             >
-              Collaborate with us
+              Colaborate with us
             </a>
             <svg
               width="12"
@@ -63,7 +63,7 @@ const Body = () => {
               ></path>
             </svg>
           </div>
-          </Link>
+          
           <p className="text-black md:text-[16px] text-[5px] text-justify">
             We work with builders from day zero,
             <br />
@@ -117,32 +117,7 @@ const Body = () => {
         />
 
         <div className="absolute  left-[17%] top-[31.5%] md:right-[8.5rem] md:top-[11.4rem] flex flex-col gap-2 items-start">
-            <Link href={"/home"}>
-          <div className="flex items-center gap-2">
-            <a
-              className="px-2 py-1 rounded-md text-black font-extralight text-[7px] md:text-[10px] bg-black/10 uppercase link-cover"
-              href="#"
-            >
-              Open Source
-            </a>
-            <svg
-              width="12"
-              height="6"
-              viewBox="0 0 12 6"
-              className="text-black rotate-180"
-            >
-              <path
-                d="M0 3L5 5.88675L5 0.113248L0 3ZM12 2.5L4.5 2.5L4.5 3.5L12 3.5L12 2.5Z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </div>
-          </Link>
-          
-        </div>
-
-        <div className="absolute left-[24%] bottom-[1%] md:right-[7.5rem] md:bottom-[3.5rem] flex flex-col gap-2 items-start">
-          <Link href={"/collaborate"}>
+            <Link href={"/portfolio"}>
           <div className="flex items-center gap-2">
             <a
               className="px-2 py-1 rounded-md text-black font-extralight text-[7px] md:text-[10px] bg-black/10 uppercase link-cover"
@@ -163,6 +138,31 @@ const Body = () => {
             </svg>
           </div>
           </Link>
+          
+        </div>
+
+        <div className="absolute left-[25%] bottom-[-2%] md:right-[7.5rem] md:bottom-[3.5rem] flex flex-col gap-2 items-start">
+          
+          <div className="flex items-center gap-2">
+            <a
+              className="px-2 py-1 rounded-md text-black font-extralight text-[7px] md:text-[10px] bg-black/10 uppercase link-cover"
+              href="#"
+            >
+              Colaborate with us
+            </a>
+            <svg
+              width="12"
+              height="6"
+              viewBox="0 0 12 6"
+              className="text-black rotate-180"
+            >
+              <path
+                d="M0 3L5 5.88675L5 0.113248L0 3ZM12 2.5L4.5 2.5L4.5 3.5L12 3.5L12 2.5Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+          
           <p className="text-black md:text-[16px] text-[10px] text-justify">
             We work with builders from day zero,
             <br />
