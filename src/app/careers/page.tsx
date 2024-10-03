@@ -32,7 +32,7 @@ const Careers = () => {
           <div className="w-full lg:w-1/4 p-4">
             <h2 className="text-sm font-semibold text-black">CAREERS</h2>
             <p className="text-[.7rem] w-60 text-black mb-4">
-              Browse through careers and opportunities in the Paradigm universe.
+              Browse through careers and opportunities in the Aegean Capital universe.
             </p>
             <input
               type="text"
@@ -45,9 +45,9 @@ const Careers = () => {
               className="w-48 h-6 mb-4 border border-gray-300 p-2 text-[.7rem] font-mono text-black"
             />
             <div className="mb-4">
-              <input type="checkbox" id="careersParadigm" className="mr-2" />
-              <label htmlFor="careersParadigm" className="text-[.7rem] text-black">
-                Careers at Paradigm
+              <input type="checkbox" id="careersAegean Capital" className="mr-2" />
+              <label htmlFor="careersAegean Capital" className="text-[.7rem] text-black">
+                Careers at Aegean Capital
               </label>
             </div>
 
@@ -117,9 +117,9 @@ const Careers = () => {
                       />
                     </li>
                     <li className="p-2">
-                      <input type="checkbox" id="careersParadigm" className="mr-2" />
-                      <label htmlFor="careersParadigm" className="text-sm text-black">
-                        Careers at Paradigm
+                      <input type="checkbox" id="careersAegean Capital" className="mr-2" />
+                      <label htmlFor="careersAegean Capital" className="text-sm text-black">
+                        Careers at Aegean Capital
                       </label>
                     </li>
 

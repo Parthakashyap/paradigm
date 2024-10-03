@@ -13,7 +13,7 @@ const page = () => {
 
           <p className="text-black font-serif leading-relaxed">
             This Privacy Policy (“Privacy Policy” or “Policy”) applies to the
-            collection and use of Personal Information by Paradigm (“Company,”
+            collection and use of Personal Information by Aegean Capital (“Company,”
             “we,” “us,” or “our”). It describes the Company's practices
             regarding the collection, use, and disclosure of Personal
             Information. This Policy applies to your access and use of any of
