@@ -113,7 +113,7 @@ const Body = () => {
         <Image
           src={ringm}
           alt="ring"
-          className=" w-[100%] md:w-1/2 p-4 mb-10 mt-10 md:mt-0"
+          className=" w-[100%] md:w-1/2 p-4 mb-10 mt-2 md:mt-0"
         />
 
         <div className="absolute  left-[17%] top-[36%] md:right-[8.5rem] md:top-[11.4rem] flex flex-col gap-2 items-start">
