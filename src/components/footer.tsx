@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-black text-white py-10 px-8">
       <div className="flex flex-col font-mono lg:flex-row md:gap-96 items-start">
         {/* Logo Section */}
-        <div className="flex flex-col items-start space-y-6">
+        <div className="hidden md:flex flex-col items-start space-y-6">
           <ul className="space-y-2 text-sm">
             <li>
             <Link href={"/terms"} className="hover:underline cursor-pointer">Terms</Link>
@@ -21,26 +21,38 @@ const Footer = () => {
         </div>
 
         {/* Middle Nav Links */}
-        {/* <div className="flex flex-col lg:flex-row lg:space-x-16 gap-12 md:gap-24  mt-8 lg:mt-0 text-sm">
+        <div className="flex flex-col lg:flex-row lg:space-x-16 gap-2 md:gap-24  mt-0 lg:mt-0 text-sm">
           <div className="flex flex-col space-y-2">
-            <p className="font-bold">ABOUT</p>
-            <p className="hover:underline cursor-pointer">Team</p>
-            <p className="hover:underline cursor-pointer">Twitter</p>
-            <Link href={"/contact"} className="hover:underline cursor-pointer">Contact</Link>
+            <Link href={"/about"} className="font-bold">ABOUT</Link>
+            <Link href={"/careers"} className="font-bold">CARRERS</Link>
+            
           </div>
 
           <div className="flex flex-col space-y-2">
-            <p className="font-bold">PORTFOLIO</p>
-            <p className="hover:underline cursor-pointer">Writing</p>
-            <p className="hover:underline cursor-pointer">LinkedIn</p>
+            <Link href={"/portfolio"} className="font-bold">PORTFOLIO</Link>
+            <Link href={"/contact"} className="font-bold">CONTACT</Link>
+            
           </div>
 
           <div className="flex flex-col space-y-2">
-            <p className="font-bold">OPEN SOURCE</p>
-            <p className="hover:underline cursor-pointer">Careers</p>
-            <p className="hover:underline cursor-pointer">Warpcast</p>
+            <Link href={"/collaborate"} className="font-bold">COLLABORATE</Link>
           </div>
-        </div> */}
+        </div>
+
+        <div className="md:hidden mt-10 flex flex-col items-start space-y-6">
+          <ul className="space-y-2 text-sm">
+            <li>
+            <Link href={"/terms"} className="hover:underline cursor-pointer">Terms</Link>
+            </li>
+            <li>
+            <Link href={"/disclosures"} className="hover:underline cursor-pointer">Disclosures</Link>
+            </li>
+            <li>
+              <Link href={"/privacy"} className="hover:underline cursor-pointer">Privacy</Link>
+              </li>
+            {/* <li className="hover:underline cursor-pointer">CA Privacy</li> */}
+          </ul>
+        </div>
 
         
       </div>

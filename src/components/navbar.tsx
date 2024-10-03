@@ -78,11 +78,11 @@ const Navbar = () => {
               &#10005;
             </button>
             <div className="flex flex-col space-y-8 text-2xl font-mono p-8 mt-32">
-              <Link href="/about" className="hover:underline transition" onClick={() => setIsOpen(false)}>About</Link>
-              <Link href="/portfolio" className="hover:underline transition" onClick={() => setIsOpen(false)}>Portfolio</Link>
-              <Link href="/collaborate" className="hover:underline transition" onClick={() => setIsOpen(false)}>Collaborate</Link>
-              <Link href="/careers" className="hover:underline transition" onClick={() => setIsOpen(false)}>Careers</Link>
-              <Link href="/contact" className="hover:underline transition" onClick={() => setIsOpen(false)}>Contact</Link>
+              <Link href="/about" className="hover:underline transition" onClick={() => setIsOpen(false)}>ABOUT</Link>
+              <Link href="/portfolio" className="hover:underline transition" onClick={() => setIsOpen(false)}>PORTFOLIO</Link>
+              <Link href="/collaborate" className="hover:underline transition" onClick={() => setIsOpen(false)}>COLLABORATE</Link>
+              <Link href="/careers" className="hover:underline transition" onClick={() => setIsOpen(false)}>CARRERS</Link>
+              <Link href="/contact" className="hover:underline transition" onClick={() => setIsOpen(false)}>CONTACT</Link>
             </div>
           </div>
         )}
