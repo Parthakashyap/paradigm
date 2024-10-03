@@ -1,9 +1,13 @@
 import Link from "next/link";
-
+import mobileLogo from "@/Images/ai_w (1).png";
+import Image from "next/image";
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-10 px-8">
-      <div className="flex flex-col font-mono lg:flex-row md:gap-96 items-start">
+    <footer className="bg-black text-white py-10">
+   <div className="px-7 mb-12">
+   <Image src={mobileLogo} alt="image" className=" w-20"></Image>
+   </div>
+      <div className="flex flex-col font-mono lg:flex-row md:gap-96 px-8 items-start">
         {/* Logo Section */}
         <div className="hidden md:flex flex-col items-start space-y-6">
           <ul className="space-y-2 text-sm">
@@ -58,7 +62,7 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom Section */}
-      <div className="mt-10 text-[.75rem] font-mono text-left">
+      <div className="mt-10 px-8 text-[.75rem] font-mono text-left">
         <p>Copyright © 2024 Aegean Operations LP All rights reserved.
           “Aegean” is a trademark, and the triangular mobius symbol is a
           registered trademark of Aegean Operations LP

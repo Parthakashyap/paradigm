@@ -1,44 +1,67 @@
+"use client";
 import Image from "next/image";
 import ring from "../Images/landing-page.gif";
 import Link from "next/link";
+import image from "@/Images/ai_w (1).png";
+import { useEffect, useState } from "react";
+import ColorModeProvider from "@/components/provider";
 
 const LandingPage = () => {
+  const [dateTime, setDateTime] = useState({
+    time: new Date().toLocaleTimeString("en-US", {
+      hour: "numeric",
+      minute: "2-digit",
+      hour12: true,
+      timeZone: "Asia/Kolkata", // For IST
+    }).replace(/(AM|PM)/, '').trim(),
+    date: new Date().toLocaleDateString("en-US", {
+      month: "numeric",
+      day: "numeric",
+      year: "numeric",
+    }).replace(/\//g, ' '),
+  });
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setDateTime({
+        time: new Date().toLocaleTimeString("en-US", {
+          hour: "numeric",
+          minute: "2-digit",
+          hour12: true,
+          timeZone: "Asia/Kolkata", // For IST
+        }).replace(/(AM|PM)/, '').trim(),
+        date: new Date().toLocaleDateString("en-US", {
+          month: "numeric",
+          day: "numeric",
+          year: "numeric",
+        }).replace(/\//g, ' '),
+      });
+    }, 1000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
   return (
-    <div className="text-center w-screen  flex flex-col items-center justify-center min-h-screen">
-      
-      {/* New Delhi, India visible only on mobile */}
-      <div className="text-zinc-300 mt-6 mb-6 md:hidden">
-        <p>New Delhi, India</p>
-      </div>
-
-      <div className="flex-grow flex  items-center justify-center">
-        {/* <Image src={ring} alt="ring" className="w-96 md:w-[21rem] p-4 md:mb-0 mb-10" /> */}
-
-        <h1 className=" text-[15rem] lg:text-[30rem] text-red-600 font-bold">A\</h1>
-      </div>
-
-      <footer className="w-full text-white text-left p-6 absolute bottom-0 mb-10">
-        <div className="flex justify-between items-center w-full px-10">
-          
-          <div className="text-center md:text-left">
-            <span className="text-zinc-300">
-              <Link href={"/home"}>Aegean</Link> {" "}·{" "}
-              <Link href={"/incubations"}>Incubations</Link> {" "}·{" "}
-              <Link href={"/contact"}>Contact</Link>
-            </span>
-            <div className="md:w-[27.5rem]">
-            <p className="mt-4 text-zinc-300">
-              Aegean is an investment firm that builds and invests in
-              internet, software, and technology-enabled companies.
-            </p>
-            </div>
-          </div>
-          <div className="hidden md:block">
-            <p className="text-zinc-300">New Delhi, India</p>
-          </div>
+    // <ColorModeProvider>
+      <div className="text-center bg-black w-screen flex flex-col items-center justify-center min-h-screen">
+        {/* New Delhi, India visible only on mobile */}
+        <div className="flex gap-2 justify-between md:w-[10%] items-center mt-7">
+          <h1>{dateTime.time}</h1>
+          <p className="hidden md:block">{dateTime.date}</p>
         </div>
-      </footer>
-    </div>
+        <div className="flex-grow flex flex-col items-center justify-center">
+          {/* Display date and time */}
+          <Image
+            src={image}
+            alt="ring"
+            className="w-96 md:w-[41rem] p-4 md:mb-0 mb-10"
+          />
+        </div>
+        <Link href={"/info"} className="text-lg mb-8">Aegean Capital</Link>
+      </div>
+    // </ColorModeProvider>
   );
 };
 

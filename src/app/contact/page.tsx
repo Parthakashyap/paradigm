@@ -30,7 +30,7 @@ const Contact = () => {
                     <div className="border-t border-gray-300 my-4"></div>
 
                     {/* Socials Section */}
-                    <div className="pt-8">
+                    {/* <div className="pt-8">
                         <div className="text-xs lg:text-sm uppercase text-black font-mono">Socials</div>
                         <div className="flex flex-wrap space-x-2 lg:space-x-4 pt-2 text-[.7rem]">
                             <button className="bg-gray-200 font-mono text-black py-1 px-3 rounded-md">
@@ -43,7 +43,7 @@ const Contact = () => {
                                 Warpcast
                             </button>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             

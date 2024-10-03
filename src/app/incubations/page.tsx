@@ -125,14 +125,14 @@ const AsciiModelViewer: React.FC = () => {
   return (
     <div ref={mountRef} className="relative w-full h-full">
       <div className="md:flex hidden">
-      <Link href={"/home"} className="absolute bottom-24 left-8 p-2 text-black">Aegean</Link>
+      {/* <Link href={"/home"} className="absolute bottom-24 left-8 p-2 text-black">Aegean</Link> */}
       <div className="absolute bottom-6 left-8 text-black text-sm font-mono w-96 p-2 rounded-md">
         We partner with founders to explore new ideas, build exceptional
         products, and launch world-class companies.
       </div>
       </div>
       <div className="md:hidden flex">
-      <Link href={"/home"} className="absolute bottom-24 left-44 text-center text-black">Aegean</Link>
+      {/* <Link href={"/home"} className="absolute bottom-24 left-44 text-center text-black">Aegean</Link> */}
       <div className="absolute bottom-5 left-5 text-center text-black text-sm font-mono w-96 p-2 rounded-md">
         We partner with founders to explore new ideas, build exceptional
         products, and launch world-class companies.
