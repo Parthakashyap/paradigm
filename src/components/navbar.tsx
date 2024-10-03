@@ -59,7 +59,7 @@ const Navbar = () => {
           </div>
 
           {/* Links (hidden on small screens, visible on larger screens) */}
-          <div className="hidden md:flex space-x-10 mr-[40rem] text-sm font-mono">
+          <div className="hidden bg-white  p-4 rounded-md md:flex space-x-10 mr-[40rem] text-sm font-mono">
             <Link href="/about" className="hover:underline transition">About</Link>
             <Link href="/portfolio" className="hover:underline transition">Portfolio</Link>
             <Link href="/collaborate" className="hover:underline transition">Collaborate</Link>
