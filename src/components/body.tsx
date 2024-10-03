@@ -109,14 +109,14 @@ const Body = () => {
 
 
 
-      <div className=" text-center mt-6 mb-20 bg-white md:hidden flex items-center justify-center">
+      <div className=" text-center -mt-10 mb-2 bg-white md:hidden flex items-center justify-center">
         <Image
           src={ringm}
           alt="ring"
-          className=" w-[100%] md:w-1/2 p-4 mb-10  md:mt-0"
+          className=" w-[100%] md:w-1/2 p-4 mb-10 mt-2 md:mt-0"
         />
 
-        <div className="absolute  left-[17%] top-[36%] md:right-[8.5rem] md:top-[11.4rem] flex flex-col gap-2 items-start">
+        <div className="absolute  left-[17%] top-[31%] md:right-[8.5rem] md:top-[11.4rem] flex flex-col gap-2 items-start">
             <Link href={"/home"}>
           <div className="flex items-center gap-2">
             <a
@@ -171,7 +171,7 @@ const Body = () => {
           </p>
         </div>
 
-        <div className="absolute right-[15%] top-[24%] md:left-[8.8rem] md:top-[21rem] flex flex-col gap-2 items-start">
+        <div className="absolute right-[15%] top-[20%] md:left-[8.8rem] md:top-[21rem] flex flex-col gap-2 items-start">
           <Link href={"/about"}>
           <div className="flex items-center gap-2">
             <a
