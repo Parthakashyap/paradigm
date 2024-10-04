@@ -14,7 +14,7 @@ const LandingPage = () => {
       </div>
 
       <div className="flex-grow flex  items-center justify-center">
-        <Image src={image} alt="ring" className="w-96 md:w-[41rem] p-6 md:mb-0 mb-[8.5rem]" />
+        <Image src={image} alt="ring" className="w-96 md:w-[41rem] p-6 md:mb-0 mb-32" />
 
         {/* <h1 className=" text-[15rem] lg:text-[30rem] text-red-600 font-bold flex track tracking-[-5rem] items-center gap-[-8rem]">A<span className="-rotate-[8deg]">\</span></h1> */}
       </div>
