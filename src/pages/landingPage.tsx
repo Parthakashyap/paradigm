@@ -45,12 +45,14 @@ const LandingPage = () => {
 
   return (
     // <ColorModeProvider>
-      <div className="text-center bg-black w-screen h-screen fixed flex flex-col items-center justify-center p-10 overflow-hidden">
+      <div className="text-center bg-black h-full fixed flex flex-col items-center justify-center p-10 overflow-hidden">
         {/* New Delhi, India visible only on mobile */}
+        
         <div className="flex gap-2 justify-between md:w-[10%] items-center mt-7">
           <h1>{dateTime.time}</h1>
           <p className="hidden md:block">{dateTime.date}</p>
         </div>
+        
         <div className="flex-grow flex flex-col items-center justify-center">
           {/* Display date and time */}
           <Image
