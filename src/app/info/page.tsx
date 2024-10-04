@@ -6,7 +6,7 @@ import ColorModeProvider from "@/components/provider";
 const LandingPage = () => {
   return (
     <ColorModeProvider>
-    <div className="text-center w-screen  flex flex-col items-center justify-center min-h-screen">
+    <div className="text-center w-screen h-screen overflow-hidden flex flex-col items-center justify-center fixed">
       
       {/* New Delhi, India visible only on mobile */}
       <div className="text-zinc-300 mt-6 mb-6 md:hidden">
