@@ -55,7 +55,7 @@ const LandingPage = () => {
   return (
     <div className="text-center bg-black w-screen h-screen fixed flex flex-col items-center justify-center p-10 overflow-hidden">
       {/* Time and Date Display */}
-      <div className="flex gap-2 justify-between md:w-[10%] items-center mt-7">
+      <div className="flex gap-2 justify-between md:w-[10%] items-center mt-2">
         <h1>{dateTime.time}</h1>
         <p className="hidden md:block">{dateTime.date}</p>
       </div>
@@ -69,7 +69,7 @@ const LandingPage = () => {
         />
       </div>
 
-      <Link href={"/info"} className="text-lg mb-8">
+      <Link href={"/info"} className="text-lg mb-10">
         Aegean Capital
       </Link>
     </div>
