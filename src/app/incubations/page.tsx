@@ -134,10 +134,10 @@ const AsciiModelViewer: React.FC = () => {
       </div>
       </div>
       <div className="md:hidden flex">
-        <div className="absolute  left-[40%] mt-4 flex items-center">
+        <Link href={"/home"} className="absolute  left-[39%] mt-4 flex items-center">
           <Image src={ai} alt="ai" className="w-8 mr-2"/>
-          <span className="text-2xl font-serif text-black">Aegean</span>
-        </div>
+          <span className="text-2xl  text-black">Aegean</span>
+        </Link>
       {/* <Link href={"/home"} className="absolute bottom-24 left-44 text-center text-black">Aegean</Link> */}
       <div className="absolute bottom-5 left-5 text-center text-black text-sm font-mono w-96 p-2 rounded-md">
         We partner with founders to explore new ideas, build exceptional

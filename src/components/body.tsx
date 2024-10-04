@@ -109,7 +109,7 @@ const Body = () => {
 
 
 
-      <div className=" text-center -mt-10 mb-2 bg-white md:hidden flex items-center justify-center">
+      <div className=" text-center -mt-24 mb-2 bg-white md:hidden flex items-center justify-center">
         <Image
           src={ringm}
           alt="ring"
