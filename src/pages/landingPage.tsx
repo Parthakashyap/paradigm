@@ -69,7 +69,7 @@ const LandingPage = () => {
         />
       </div>
 
-      <Link href={"/info"} className="text-sm mb-28">
+      <Link href={"/info"} className="text-sm mb-20">
         Aegean Capital
       </Link>
     </div>
