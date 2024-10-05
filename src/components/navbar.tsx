@@ -71,21 +71,21 @@ const Navbar = () => {
           </div>
 
           {/* Hamburger Icon (visible on small screens) */}
-          <div className="md:hidden z-50 ">
+          <div className="md:hidden z-50 mt-[0.4rem]">
             <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
-              <div className="space-y-2">
+              <div className="space-y-[.4rem]">
                 <span
-                  className={`block w-8 h-0.5 ${
+                  className={`block w-7 h-0.5 ${
                     isOpen ? "bg-white" : "bg-black"
                   }`}
                 ></span>
                 <span
-                  className={`block w-8 h-0.5 ${
+                  className={`block w-7 h-0.5 ${
                     isOpen ? "bg-white" : "bg-black"
                   }`}
                 ></span>
                 <span
-                  className={`block w-8 h-0.5 ${
+                  className={`block w-7 h-0.5 ${
                     isOpen ? "bg-white" : "bg-black"
                   }`}
                 ></span>
