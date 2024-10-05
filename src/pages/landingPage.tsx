@@ -69,7 +69,7 @@ const LandingPage = () => {
         />
       </div>
 
-      <Link href={"/info"} className="text-lg mb-16">
+      <Link href={"/info"} className="text-lg mb-20">
         Aegean Capital
       </Link>
     </div>
