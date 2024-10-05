@@ -53,7 +53,7 @@ const LandingPage = () => {
   }, []);
 
   return (
-    <div className="text-center bg-black w-screen h-screen fixed flex flex-col items-center justify-center p-10 overflow-hidden">
+    <div className="text-center text-white bg-black w-screen h-screen fixed flex flex-col items-center justify-center p-10 overflow-hidden">
       {/* Time and Date Display */}
       <div className="flex gap-2 justify-between md:w-[10%] items-center mt-7">
         <h1>{dateTime.time}</h1>
