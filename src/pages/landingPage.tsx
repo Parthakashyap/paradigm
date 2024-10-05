@@ -53,9 +53,9 @@ const LandingPage = () => {
   }, []);
 
   return (
-    <div className="text-center text-white bg-black w-screen h-screen fixed flex flex-col items-center justify-center p-10 overflow-hidden">
+    <div className="text-center text-white bg-black w-screen min-h-screen fixed flex flex-col items-center justify-center px-10 py-5 overflow-hidden">
       {/* Time and Date Display */}
-      <div className="flex gap-2 justify-between md:w-[10%] items-center mt-7">
+      <div className="flex gap-2 justify-between md:w-[10%] items-center">
         <h1>{dateTime.time}</h1>
         <p className="hidden md:block">{dateTime.date}</p>
       </div>
@@ -65,7 +65,7 @@ const LandingPage = () => {
         <Image
           src={image}
           alt="ring"
-          className="w-96 md:w-[41rem] p-4 md:mb-0 mb-10"
+          className=" w-56 md:w-[41rem]  md:mb-0 mb-10"
         />
       </div>
 
