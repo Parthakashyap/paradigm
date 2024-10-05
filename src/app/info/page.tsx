@@ -28,7 +28,7 @@ const LandingPage = () => {
               <Link href={"/incubations"}>Incubations</Link> {" "}·{" "}
               <Link href={"/contact"}>Contact</Link>
             </span>
-            <div className="md:w-[27.5rem] w-full px-4">
+            <div className="md:w-[27.5rem] w-full px-12">
             <p className="mt-4 text-sm dark:text-zinc-300 text-black">
               Aegean is an investment firm that builds and invests in
               internet, software, and technology-enabled companies.
