@@ -19,7 +19,7 @@ const LandingPage = () => {
         {/* <h1 className=" text-[15rem] lg:text-[30rem] text-red-600 font-bold flex track tracking-[-5rem] items-center gap-[-8rem]">A<span className="-rotate-[8deg]">\</span></h1> */}
       </div>
 
-      <footer className="w-full text-white text-left p-6 absolute bottom-0 mb-10">
+      <footer className="w-full text-white text-left p-6 absolute bottom-0 mb-20">
         <div className="flex justify-between items-center w-full px-4">
           
           <div className="text-center md:text-left">
