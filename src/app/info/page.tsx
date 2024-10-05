@@ -9,7 +9,7 @@ const LandingPage = () => {
     <div className="text-center w-screen text-black h-screen overflow-hidden flex flex-col items-center justify-center fixed">
       
       {/* New Delhi, India visible only on mobile */}
-      <div className="text-black dark:text-zinc-300 mt-6 mb-6 md:hidden">
+      <div className="text-black text-sm dark:text-zinc-300 mt-6 mb-6 md:hidden">
         <p>New Delhi, India</p>
       </div>
 
@@ -23,20 +23,20 @@ const LandingPage = () => {
         <div className="flex justify-between items-center w-full px-4">
           
           <div className="text-center md:text-left">
-            <span className="dark:text-zinc-300 text-black">
+            <span className="dark:text-zinc-300 text-sm text-black">
               <Link href={"/home"}>Aegean</Link> {" "}·{" "}
               <Link href={"/incubations"}>Incubations</Link> {" "}·{" "}
               <Link href={"/contact"}>Contact</Link>
             </span>
             <div className="md:w-[27.5rem] w-full">
-            <p className="mt-4 dark:text-zinc-300 text-black">
+            <p className="mt-4 text-sm dark:text-zinc-300 text-black">
               Aegean is an investment firm that builds and invests in
               internet, software, and technology-enabled companies.
             </p>
             </div>
           </div>
           <div className="hidden md:block">
-            <p className="dark:text-zinc-300 text-black">New Delhi, India</p>
+            <p className="dark:text-zinc-300 text-sm text-black">New Delhi, India</p>
           </div>
         </div>
       </footer>
