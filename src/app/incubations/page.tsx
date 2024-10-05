@@ -139,7 +139,7 @@ const AsciiModelViewer: React.FC = () => {
           <span className=" text-sm md:text-2xl  text-black">Aegean Incubations</span>
         </Link>
       {/* <Link href={"/home"} className="absolute bottom-24 left-44 text-center text-black">Aegean</Link> */}
-      <div className="absolute bottom-5 left-5 text-center text-black text-sm font-mono w-96 p-2 rounded-md">
+      <div className="absolute bottom-24 left-5 text-center text-black text-sm font-mono w-96 p-2 rounded-md">
         We partner with founders to explore new ideas, build exceptional
         products, and launch world-class companies.
       </div>
