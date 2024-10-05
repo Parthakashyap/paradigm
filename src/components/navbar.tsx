@@ -1,10 +1,11 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import logo from "@/Images/IMG_4650-removebg-preview.png";
+import logo from "@/Images/ai (1).png";
 import Image from "next/image";
-import mobileLogo from "@/Images/ai_w (1).png";
-
+import mobileLogo from "@/Images/ai (1).png";
+import {Roboto} from "next/font/google"
+const robotoFont = Roboto({subsets: ["latin"], weight: "700"});
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -28,12 +29,12 @@ const Navbar = () => {
     >
       <nav className={`text-white  md:text-black`}>
         {/* Wrapper */}
-        <div className="flex bg-white justify-between items-center px-8 py-6 fixed top-0 left-0 right-0 z-50">
+        <div className="flex bg-white justify-between items-center px-8  py-4 fixed top-0 left-0 right-0 z-50">
           {/* Logo */}
           <Link href="/home" className="flex items-center space-x-2">
             <div className="flex gap-0 justify-center items-center">
               <div className="flex items-center gap-2">
-                <Image alt="logo" src={logo} className=" w-12 md:w-16" />
+                <Image alt="logo" src={logo} className=" w-9 md:w-12 " />
               </div>
 
               <span className="relative flex items-center mr-">
@@ -45,7 +46,7 @@ const Navbar = () => {
                 ></span>
                 {/* Rest of the text */}
                 <span
-                  className={`uppercase font-[900] text-4xl ${
+                  className={`uppercase tracking-wide font-[900] md:text-4xl text-2xl ${robotoFont.className} ${
                     isOpen ? "text-white" : "text-black"
                   } font-light tracking-tight transition-transform duration-300`}
                   style={{
@@ -70,7 +71,7 @@ const Navbar = () => {
           </div>
 
           {/* Hamburger Icon (visible on small screens) */}
-          <div className="md:hidden z-50">
+          <div className="md:hidden z-50 ">
             <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
               <div className="space-y-2">
                 <span
@@ -115,11 +116,11 @@ const Navbar = () => {
         {/* Collapsible Mobile Menu (visible on small screens) */}
         {isOpen && (
           <div className="fixed inset-0 z-50 flex flex-col  items-start bg-black text-white w-full h-full transition-all duration-300">
-            <div className="flex gap-0 items-center p-3">
-              <Image src={mobileLogo} alt="mobilelogo" className=" w-12"></Image>
+            <div className="flex gap-0 items-center p-6">
+              <Image src={mobileLogo} alt="mobilelogo" className=" w-10"></Image>
               <Link
                 href="/home"
-                className="font-serif top-6 left-12 text-white  text-4xl"
+                className={`top-6 ${robotoFont.className} left-12 text-white text-2xl uppercase  md:text-4xl`}
               >
                 Aegean
               </Link>

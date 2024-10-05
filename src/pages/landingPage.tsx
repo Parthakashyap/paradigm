@@ -65,11 +65,11 @@ const LandingPage = () => {
         <Image
           src={image}
           alt="ring"
-          className=" w-56 md:w-[41rem]  md:mb-0 mb-10"
+          className=" w-44 md:w-[41rem]  md:mb-0 mb-10"
         />
       </div>
 
-      <Link href={"/info"} className="text-lg mb-8">
+      <Link href={"/info"} className="text-sm mb-28">
         Aegean Capital
       </Link>
     </div>

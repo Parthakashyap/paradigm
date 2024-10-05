@@ -1,5 +1,5 @@
 import Link from "next/link";
-import mobileLogo from "@/Images/ai_w (1).png";
+import mobileLogo from "@/Images/ai (1).png";
 import Image from "next/image";
 const Footer = () => {
   return (
