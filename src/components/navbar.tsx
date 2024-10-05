@@ -34,7 +34,7 @@ const Navbar = () => {
           <Link href="/home" className="flex items-center space-x-2">
             <div className="flex gap-0 justify-center items-center">
               <div className="flex items-center gap-2">
-                <Image alt="logo" src={logo} className=" w-9 md:w-12 " />
+                <Image alt="logo" src={logo} className=" w-14 md:w-12 " />
               </div>
 
               <span className="relative flex items-center mr-">
@@ -59,7 +59,7 @@ const Navbar = () => {
                     position: "absolute",
                   }}
                 >
-                  Aegean
+                  
                 </span>
               </span>
             </div>
@@ -71,21 +71,21 @@ const Navbar = () => {
           </div>
 
           {/* Hamburger Icon (visible on small screens) */}
-          <div className="md:hidden z-50 mt-[0.4rem]">
+          <div className="md:hidden z-50 mt-[0.3rem]">
             <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
-              <div className="space-y-[.4rem]">
+              <div className="space-y-[.37rem]">
                 <span
-                  className={`block w-7 h-0.5 ${
+                  className={`block w-6 h-0.5 ${
                     isOpen ? "bg-white" : "bg-black"
                   }`}
                 ></span>
                 <span
-                  className={`block w-7 h-0.5 ${
+                  className={`block w-6 h-0.5 ${
                     isOpen ? "bg-white" : "bg-black"
                   }`}
                 ></span>
                 <span
-                  className={`block w-7 h-0.5 ${
+                  className={`block w-6 h-0.5 ${
                     isOpen ? "bg-white" : "bg-black"
                   }`}
                 ></span>
