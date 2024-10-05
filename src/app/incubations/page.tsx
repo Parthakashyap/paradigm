@@ -134,9 +134,9 @@ const AsciiModelViewer: React.FC = () => {
       </div>
       </div>
       <div className="md:hidden flex">
-        <Link href={"/home"} className="absolute  left-[39%] mt-4 flex items-center">
-          <Image src={ai} alt="ai" className="w-8 mr-2"/>
-          <span className="text-2xl  text-black">Aegean</span>
+        <Link href={"/home"} className="absolute  left-[32%] mt-4 flex items-center">
+          <Image src={ai} alt="ai" className=" w-5 md:w-8 mr-2"/>
+          <span className=" text-sm md:text-2xl  text-black">Aegean Incubations</span>
         </Link>
       {/* <Link href={"/home"} className="absolute bottom-24 left-44 text-center text-black">Aegean</Link> */}
       <div className="absolute bottom-5 left-5 text-center text-black text-sm font-mono w-96 p-2 rounded-md">
