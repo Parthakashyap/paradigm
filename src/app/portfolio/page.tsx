@@ -1,25 +1,45 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
-
+import { Open_Sans } from "next/font/google";
+const openSans = Open_Sans({ weight: "600", subsets: ["latin-ext"] });
 const Portfolio = () => {
   return (
-    <div className="w-full min-h-screen bg-white">
+    <div className="w-full min-h-screen bg-white flex flex-col justify-between">
       <Navbar />
-      <div className="bg-white min-h-screen flex flex-col justify-center pt-12">
-        <div className="flex justify-center items-start flex-col mx-auto max-w-3xl h-full p-3 md:p-10 mb-20 space-y-6">
-          <h1 className=" text-[1.7rem] md:text-4xl font-serif text-black leading-tight">
-            Aegean believes that intelligent software will power the future of the world.
+
+      {/* Added `flex-grow` to make the content take available vertical space */}
+      <div className="bg-white pt-4 flex-grow">
+        <div className="flex justify-center items-start flex-col mx-auto w-full md:max-w-3xl p-4 md:p-10 space-y-6">
+          <h1
+            className={` text-[1.5rem]  md:text-4xl font-serif text-black leading-tight ${openSans.className}`}
+          >
+            Aegean believes that intelligent software will power the future of
+            the world.
           </h1>
-          <p className="text-black leading-relaxed">
-            Aegean’s portfolio showcases an emerging array of technology companies that are at the forefront of artificial intelligence, machine learning, and software development. These companies are united by a common thread of disrupting the future. From AI-driven platforms that transform industries to sophisticated software systems that power global enterprises, our investments reflect a commitment to backing category-defining technologies.
+          <p className="text-black text-md leading-relaxed">
+            Aegean’s portfolio showcases an emerging array of technology
+            companies that are at the forefront of artificial intelligence,
+            machine learning, and software development. These companies are
+            united by a common thread of disrupting the future. From AI-driven
+            platforms that transform industries to sophisticated software
+            systems that power global enterprises, our investments reflect a
+            commitment to backing category-defining technologies.
           </p>
           <p className="text-black leading-relaxed">
-            Each company in our portfolio represents a unique solution to a significant market need. Some are creating the AI tools that businesses rely on to predict market trends or optimize operations, while others are building software products that redefine user experiences and enterprise efficiencies. Whether it's a startup mitigating climate crisis with leveraging carbon credits or a company revolutionising enterprise workflows with innovative software, we invest in visionary founders who share our belief in the transformational power of technology.
+            Each company in our portfolio represents a unique solution to a
+            significant market need. Some are creating the AI tools that
+            businesses rely on to predict market trends or optimize operations,
+            while others are building software products that redefine user
+            experiences and enterprise efficiencies. Whether it's a startup
+            mitigating climate crisis with leveraging carbon credits or a
+            company revolutionising enterprise workflows with innovative
+            software, we invest in visionary founders who share our belief in
+            the transformational power of technology.
           </p>
         </div>
 
-        {/* Smooth, gapless company names slider with fade effect */}
-        <div className="slider-container w-full  py-24 -mt-32 relative overflow-hidden">
+        <div className="mt-12">
+        <div className=" w-full py-32 -mt-32 relative overflow-hidden">
           <div className="slider-track">
             <div className="slider-content">
               <span className="slider-item">Wave</span>
@@ -41,7 +61,17 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      </div>
+
+      {/* Divider line below the text */}
+      {/* <div className="flex items-center justify-center mb-10">
+      <div className="w-96  pb-10 border-t-2 border-gray-300"></div>
+      </div> */}
+      {/* Added `mt-6` to create space between the divider and the footer */}
+  
+      <div className=" mt-48">
+        <Footer />
+      </div>
     </div>
   );
 };

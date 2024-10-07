@@ -73,7 +73,7 @@ const Navbar = () => {
           {/* Hamburger Icon (visible on small screens) */}
           <div className="md:hidden z-50 mt-[0.3rem]">
             <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
-              <div className="space-y-[.37rem]">
+              <div className="space-y-[.37rem] scale-90 opacity-25">
                 <span
                   className={`block w-6 h-0.5 ${
                     isOpen ? "bg-white" : "bg-black"
@@ -104,7 +104,7 @@ const Navbar = () => {
             <Link href="/collaborate" className="hover:underline transition">
               Collaborate
             </Link>
-            <Link href="/careers" className="hover:underline transition">
+            <Link href="/all-careers" className="hover:underline transition">
               Careers
             </Link>
             <Link href="/contact-us" className="hover:underline transition">
@@ -116,7 +116,7 @@ const Navbar = () => {
         {/* Collapsible Mobile Menu (visible on small screens) */}
         {isOpen && (
           <div className="fixed inset-0 z-50 flex flex-col  items-start bg-black text-white w-full h-full transition-all duration-300">
-            <div className="flex gap-0 items-center p-6 px-8">
+            <div className="flex gap-0 items-center py-[1.31rem] px-[2.1rem]">
               <Image src={mobileLogo} alt="mobilelogo" className=" w-14"></Image>
               {/* <Link
                 href="/home"
@@ -127,7 +127,7 @@ const Navbar = () => {
             </div>
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute top-6 right-6 text-white text-3xl"
+              className="absolute top-6 scale-90  right-6 text-white text-3xl"
             >
               &#10005;
             </button>
@@ -154,7 +154,7 @@ const Navbar = () => {
                 COLLABORATE
               </Link>
               <Link
-                href="/careers"
+                href="/all-careers"
                 className="hover:underline transition"
                 onClick={() => setIsOpen(false)}
               >

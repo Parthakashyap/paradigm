@@ -6,7 +6,7 @@ const Contact = () => {
     <div className="w-full min-h-screen bg-white">
       <Navbar />
       <div className="md:pt-20">
-        <div className="flex  flex-col lg:flex-row items-start lg:items-start h-auto lg:h-screen p-6 lg:p-10 pt-20">
+        <div className="flex  flex-col lg:flex-row items-start lg:items-start h-auto lg:h-screen p-6 lg:p-10 md:pt-20">
           {/* Left Section - Contact Title */}
           <div className="text-left text-black/20 font-serif text-3xl lg:text-4xl lg:pr-56 mb-10 lg:mb-0">
             Contact
@@ -43,7 +43,7 @@ const Contact = () => {
               {/* Divider Line */}
               <div className="border-t border-gray-300 mt-5"></div>
 
-              <div className="pt-8">
+              <div className="pt-3 mb-48">
                 <div className="text-xs lg:text-sm uppercase text-black font-mono">
                   Socials
                 </div>

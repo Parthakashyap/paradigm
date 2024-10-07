@@ -26,13 +26,14 @@ const Careers = () => {
   return (
     <div>
       <Navbar />
-      <div className="flex flex-col lg:flex-row p-2 pt-24 bg-white min-h-screen font-mono">
+      <div className="flex flex-col lg:flex-row p-2 md:pt-24 pt-10 bg-white min-h-screen font-mono">
         {/* Left Sidebar for large screens */}
         {!isMobile && (
           <div className="w-full lg:w-1/4 p-4">
             <h2 className="text-sm font-semibold text-black">CAREERS</h2>
             <p className="text-[.7rem] w-60 text-black mb-4">
-              Browse through careers and opportunities in the Aegean Capital universe.
+              Browse through careers and opportunities in the Aegean Capital
+              universe.
             </p>
             <input
               type="text"
@@ -45,8 +46,15 @@ const Careers = () => {
               className="w-48 h-6 mb-4 border border-gray-300 p-2 text-[.7rem] font-mono text-black"
             />
             <div className="mb-4">
-              <input type="checkbox" id="careersAegean Capital" className="mr-2" />
-              <label htmlFor="careersAegean Capital" className="text-[.7rem] text-black">
+              <input
+                type="checkbox"
+                id="careersAegean Capital"
+                className="mr-2"
+              />
+              <label
+                htmlFor="careersAegean Capital"
+                className="text-[.7rem] text-black"
+              >
                 Careers at Aegean Capital
               </label>
             </div>
@@ -83,13 +91,13 @@ const Careers = () => {
         )}
 
         {/* Right Content Section */}
-        <div className="w-full lg:w-3/4 p-8 pl-0 lg:pl-32">
+        <div className="w-full lg:w-3/4  md:p-8 pl-0 lg:pl-32">
           {/* Filter By Button for mobile */}
           {isMobile && (
-            <div className="relative mb-6">
+            <div className="relative mb-6 w-full">
               <button
                 onClick={toggleDropdown}
-                className="w-full bg-gray-100 border border-gray-300 text-black p-3 flex justify-between items-center"
+                className="w-full bg-gray-100  border border-gray-300 text-black p-3 flex justify-between items-center"
               >
                 FILTER BY
                 <span className="ml-2">&#9662;</span>
@@ -117,8 +125,15 @@ const Careers = () => {
                       />
                     </li>
                     <li className="p-2">
-                      <input type="checkbox" id="careersAegean Capital" className="mr-2" />
-                      <label htmlFor="careersAegean Capital" className="text-sm text-black">
+                      <input
+                        type="checkbox"
+                        id="careersAegean Capital"
+                        className="mr-2"
+                      />
+                      <label
+                        htmlFor="careersAegean Capital"
+                        className="text-sm text-black"
+                      >
                         Careers at Aegean Capital
                       </label>
                     </li>
@@ -157,52 +172,38 @@ const Careers = () => {
           {/* Job Listings */}
           <ul>
             {[
-              { title: "Senior React Engineer", company: "Symbiotic" },
-              { title: "Middle Golang Engineer", company: "Symbiotic" },
-              { title: "Head of Developer Relations", company: "Symbiotic" },
+              { title: "Senior React Engineer", company: "Symbiotic" , image: "https://cdn.getro.com/companies/6a066a37-437b-5543-95e7-0e9d8c882b88-1725192904" },
+              { title: "Middle Golang Engineer", company: "Symbiotic", image : "https://cdn.getro.com/companies/6a066a37-437b-5543-95e7-0e9d8c882b88-1725192904" },
+              { title: "Head of Developer Relations", company: "Symbiotic" ,image : "https://cdn.getro.com/companies/6a066a37-437b-5543-95e7-0e9d8c882b88-1725192904" },
               {
                 title: "Content Marketing",
                 company: "Succinct",
+                image : "https://cdn.getro.com/companies/07d96a89-f147-5ee7-b688-3a2b6199ac34",
                 location: "San Francisco, CA, USA",
               },
               {
                 title: "UI/UX Engineer",
                 company: "MetaDAO",
+                image : "https://cdn.getro.com/companies/0abe0730-55da-5e46-bfb4-07e78c2b45ae-1724249105",
                 location: "San Francisco, CA, USA",
               },
               {
                 title: "Founding Engineer",
                 company: "MetaDAO",
+                image : "https://cdn.getro.com/companies/0abe0730-55da-5e46-bfb4-07e78c2b45ae-1724249105",
                 location: "San Francisco, CA, USA",
               },
-              { title: "Senior React Engineer", company: "Symbiotic" },
-              { title: "Middle Golang Engineer", company: "Symbiotic" },
-              { title: "Head of Developer Relations", company: "Symbiotic" },
-              {
-                title: "Content Marketing",
-                company: "Succinct",
-                location: "San Francisco, CA, USA",
-              },
-              {
-                title: "UI/UX Engineer",
-                company: "MetaDAO",
-                location: "San Francisco, CA, USA",
-              },
-              {
-                title: "Founding Engineer",
-                company: "MetaDAO",
-                location: "San Francisco, CA, USA",
-              },
+              { title: "Designer Brand & Marketing", company: "Conduit" , image : "https://cdn.getro.com/companies/40d67ff1-6195-5d22-b4c8-f3d6fc21ac3a-1726402513" },
+              { title: "BD & Growth Lead", company: "Succint" , image : "https://cdn.getro.com/companies/07d96a89-f147-5ee7-b688-3a2b6199ac34" },
+              { title: "Senior/Staff Fullstack Developer", company: "Privy", image : "https://cdn.getro.com/companies/b17eed59-4cc2-5c86-86c9-5071008a3543" },
             ].map((job, index) => (
               <li key={index} className="flex items-center mb-6">
                 <div className="w-16 h-16 bg-gray-200 flex justify-center items-center mr-4">
-                  <div className="w-12 h-12 bg-gray-300"></div>
+                  <img src={job.image} alt="" />
                 </div>
                 <div>
                   <h4 className="font-bold text-lg text-black">{job.title}</h4>
-                  <p className="text-sm text-gray-600">
-                    {job.company} {job.location && `| ${job.location}`}
-                  </p>
+                  <p className="text-sm text-gray-600">{job.company}</p>
                 </div>
               </li>
             ))}
