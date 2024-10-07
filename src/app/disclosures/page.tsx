@@ -6,8 +6,8 @@ const page = () => {
     <div className="w-full h-screen bg-white">
       <Navbar />
       <div className="bg-white pt-12">
-        <div className="flex justify-center items-start flex-col mx-auto max-w-3xl h-full p-10 mb-20 space-y-6">
-          <h1 className="text-5xl font-serif text-black">
+        <div className="flex justify-center items-start flex-col mx-auto max-w-3xl h-full p-4 md:p-10 mb-20 space-y-6">
+          <h1 className=" text-[2rem] md:text-5xl font-serif text-black">
             Important Disclosures
           </h1>
 
