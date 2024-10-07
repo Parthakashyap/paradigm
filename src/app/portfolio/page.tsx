@@ -69,7 +69,7 @@ const Portfolio = () => {
       </div> */}
       {/* Added `mt-6` to create space between the divider and the footer */}
   
-      <div className=" mt-56">
+      <div className=" mt-48">
         <Footer />
       </div>
     </div>
