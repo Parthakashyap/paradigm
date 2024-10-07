@@ -167,7 +167,65 @@ const Careers = () => {
       <div className="flex flex-col lg:flex-row p-2 md:pt-24 pt-10 bg-white min-h-screen font-mono">
         {/* Left Sidebar for large screens */}
         {!isMobile && (
-          <div className="w-full lg:w-1/4 p-4">{/* Sidebar content */}</div>
+          <div className="w-full lg:w-1/4 p-4">
+            <h2 className="text-sm font-semibold text-black">CAREERS</h2>
+            <p className="text-[.7rem] w-60 text-black mb-4">
+              Browse through careers and opportunities in the Aegean Capital
+              universe.
+            </p>
+            <input
+              type="text"
+              placeholder="Title or Company"
+              className="w-48 h-6 mt-2 mb-2 border border-gray-300 p-2 text-[.7rem] font-mono text-black"
+            />
+            <input
+              type="text"
+              placeholder="Locations"
+              className="w-48 h-6 mb-4 border border-gray-300 p-2 text-[.7rem] font-mono text-black"
+            />
+            <div className="mb-4">
+              <input
+                type="checkbox"
+                id="careersAegean Capital"
+                className="mr-2"
+              />
+              <label
+                htmlFor="careersAegean Capital"
+                className="text-[.7rem] text-black"
+              >
+                Careers at Aegean Capital
+              </label>
+            </div>
+
+            {/* Roles Section */}
+            <h3 className=" text-[.7rem] text-black mb-2">Roles</h3>
+            <ul className="text-[.7rem]">
+              {[
+                "Accounting & Finance",
+                "Administration",
+                "Customer Service",
+                "Data Science",
+                "Design",
+                "IT",
+                "Legal",
+                "Marketing & Communications",
+                "Operations",
+                "Other Engineering",
+                "People & HR",
+                "Product",
+                "Quality Assurance",
+                "Sales & Business Development",
+                "Software Engineering",
+              ].map((role, index) => (
+                <li key={index} className="mb-2">
+                  <input type="checkbox" id={role} className="mr-2" />
+                  <label htmlFor={role} className="text-black">
+                    {role}
+                  </label>
+                </li>
+              ))}
+            </ul>
+          </div>
         )}
 
         {/* Right Content Section */}
@@ -194,7 +252,64 @@ const Careers = () => {
               {/* Dropdown Menu */}
               {isDropdownOpen && (
                 <div className="absolute top-full mt-2 w-full bg-white border border-gray-300 shadow-lg z-10 max-h-48 overflow-y-scroll">
-                  {/* Dropdown content */}
+                  <ul className="text-sm text-black">
+                    {/* Mobile Sidebar Options in Dropdown */}
+                    <li className="p-2 font-bold">Title or Company</li>
+                    <li className="p-2">
+                      <input
+                        type="text"
+                        placeholder="Title or Company"
+                        className="w-full border border-gray-300 p-2 text-sm font-mono text-black"
+                      />
+                    </li>
+                    <li className="p-2 font-bold">Locations</li>
+                    <li className="p-2">
+                      <input
+                        type="text"
+                        placeholder="Locations"
+                        className="w-full border border-gray-300 p-2 text-sm font-mono text-black"
+                      />
+                    </li>
+                    <li className="p-2">
+                      <input
+                        type="checkbox"
+                        id="careersAegean Capital"
+                        className="mr-2"
+                      />
+                      <label
+                        htmlFor="careersAegean Capital"
+                        className="text-sm text-black"
+                      >
+                        Careers at Aegean Capital
+                      </label>
+                    </li>
+
+                    <li className="p-2 font-bold">Roles</li>
+                    {[
+                      "Accounting & Finance",
+                      "Administration",
+                      "Customer Service",
+                      "Data Science",
+                      "Design",
+                      "IT",
+                      "Legal",
+                      "Marketing & Communications",
+                      "Operations",
+                      "Other Engineering",
+                      "People & HR",
+                      "Product",
+                      "Quality Assurance",
+                      "Sales & Business Development",
+                      "Software Engineering",
+                    ].map((role, index) => (
+                      <li key={index} className="p-2">
+                        <input type="checkbox" id={role} className="mr-2" />
+                        <label htmlFor={role} className="text-sm text-black">
+                          {role}
+                        </label>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               )}
             </div>
