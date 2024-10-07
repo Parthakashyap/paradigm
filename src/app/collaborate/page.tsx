@@ -6,8 +6,8 @@ const collaborate = () => {
     <div className="w-full min-h-screen bg-white flex flex-col justify-between">
       <Navbar />
       <div className="bg-white -mt-12">
-        <div className="flex justify-center min-h-screen items-start flex-col mx-auto max-w-3xl h-full p-10 mb-2 space-y-6">
-          <h1 className="text-4xl font-serif text-black leading-tight">
+        <div className="flex justify-center min-h-screen items-start flex-col mx-auto max-w-3xl h-full p-4 md:p-10 mb-2 space-y-6">
+          <h1 className=" text-[2rem] md:text-4xl font-serif text-black leading-tight">
             Aegean is a research- driven ai investment firm.
           </h1>
           <p className="text-black leading-relaxed">
@@ -34,11 +34,12 @@ const collaborate = () => {
             If you're building something ambitious at the frontier, come build
             with us.
           </p>
+          <div className=" w-full  pb-14 border-t-2 border-gray-300"></div>
         </div>
       </div>
       {/* Divider line below the text */}
-      <div className="flex items-center justify-center mb-10">
-      <div className="w-96  pb-14 border-t-2 border-gray-300"></div>
+      <div className="flex items-center justify-center">
+    
       </div>
       {/* Added `mt-6` to create space between the divider and the footer */}
       <div className="mt-6">

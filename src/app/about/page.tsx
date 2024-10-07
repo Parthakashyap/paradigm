@@ -11,8 +11,8 @@ const About = () => {
 
       {/* Added `flex-grow` to make the content take available vertical space */}
       <div className="bg-white pt-4 flex-grow">
-        <div className="flex justify-center items-start flex-col mx-auto max-w-3xl p-10 space-y-6">
-          <h1 className="text-4xl font-serif text-black leading-tight">
+        <div className="flex justify-center items-start flex-col mx-auto w-full md:max-w-3xl p-4 md:p-10 space-y-6">
+          <h1 className=" text-[2rem] md:text-4xl font-serif text-black leading-tight">
             Aegean is a research-driven technology investment firm.
           </h1>
           <p className="text-black leading-relaxed">

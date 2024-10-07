@@ -29,6 +29,7 @@ export default function RootLayout({
       suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased` }
       >
+        <meta name="theme-color" content="#A0021B"></meta>
         {children}
       </body>
     </html>

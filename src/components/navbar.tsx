@@ -116,14 +116,14 @@ const Navbar = () => {
         {/* Collapsible Mobile Menu (visible on small screens) */}
         {isOpen && (
           <div className="fixed inset-0 z-50 flex flex-col  items-start bg-black text-white w-full h-full transition-all duration-300">
-            <div className="flex gap-0 items-center p-6">
-              <Image src={mobileLogo} alt="mobilelogo" className=" w-10"></Image>
-              <Link
+            <div className="flex gap-0 items-center p-6 px-8">
+              <Image src={mobileLogo} alt="mobilelogo" className=" w-14"></Image>
+              {/* <Link
                 href="/home"
                 className={`top-6 ${robotoFont.className} left-12 text-white text-2xl uppercase  md:text-4xl`}
               >
                 Aegean
-              </Link>
+              </Link> */}
             </div>
             <button
               onClick={() => setIsOpen(false)}

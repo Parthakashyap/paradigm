@@ -3,11 +3,11 @@ import Navbar from "@/components/navbar";
 
 const Portfolio = () => {
   return (
-    <div className="w-full h-screen bg-white">
+    <div className="w-full min-h-screen bg-white">
       <Navbar />
       <div className="bg-white min-h-screen flex flex-col justify-center pt-12">
-        <div className="flex justify-center items-start flex-col mx-auto max-w-3xl h-full p-10 mb-20 space-y-6">
-          <h1 className="text-4xl font-serif text-black leading-tight">
+        <div className="flex justify-center items-start flex-col mx-auto max-w-3xl h-full p-3 md:p-10 mb-20 space-y-6">
+          <h1 className=" text-[1.7rem] md:text-4xl font-serif text-black leading-tight">
             Aegean believes that intelligent software will power the future of the world.
           </h1>
           <p className="text-black leading-relaxed">
@@ -22,24 +22,21 @@ const Portfolio = () => {
         <div className="slider-container w-full  py-24 -mt-32 relative overflow-hidden">
           <div className="slider-track">
             <div className="slider-content">
-              <span className="slider-item">Percept</span>
-              <span className="slider-item">Codex</span>
-              <span className="slider-item">Zora</span>
-              <span className="slider-item">FireBlock</span>
-              <span className="slider-item">QuickPay</span>
-              <span className="slider-item">Conduit</span>
-              <span className="slider-item">CloudSet</span>
-              <span className="slider-item">Qube</span>
-
+              <span className="slider-item">Wave</span>
+              <span className="slider-item">Affinidi</span>
+              <span className="slider-item">Succinct</span>
+              <span className="slider-item">Axiom</span>
+              <span className="slider-item">Yield</span>
+              <span className="slider-item">StackWare</span>
+              <span className="slider-item">Vault</span>
               {/* Duplicate for seamless scrolling */}
-              <span className="slider-item">Percept</span>
-              <span className="slider-item">Codex</span>
-              <span className="slider-item">Zora</span>
-              <span className="slider-item">FireBlock</span>
-              <span className="slider-item">QuickPay</span>
-              <span className="slider-item">Conduit</span>
-              <span className="slider-item">CloudSet</span>
-              <span className="slider-item">Qube</span>
+              <span className="slider-item">Wave</span>
+              <span className="slider-item">Affinidi</span>
+              <span className="slider-item">Succinct</span>
+              <span className="slider-item">Axiom</span>
+              <span className="slider-item">Yield</span>
+              <span className="slider-item">StackWare</span>
+              <span className="slider-item">Vault</span>
             </div>
           </div>
         </div>
