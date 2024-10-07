@@ -3,9 +3,9 @@ import Navbar from "@/components/navbar";
 
 const collaborate = () => {
   return (
-    <div className="w-full min-h-screen bg-white flex flex-col justify-between">
+    <div className="w-full bg-white flex flex-col">
       <Navbar />
-      <div className="bg-white -mt-12">
+      <div className="bg-white -mt-[5%] md:-mt-12">
         <div className="flex justify-center min-h-screen items-start flex-col mx-auto max-w-3xl h-full p-4 md:p-10 mb-2 space-y-6">
           <h1 className=" text-[2rem] md:text-4xl font-serif text-black leading-tight">
             Aegean is a research- driven ai investment firm.
