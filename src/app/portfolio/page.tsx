@@ -16,7 +16,7 @@ const Portfolio = () => {
             Aegean believes that intelligent software will power the future of
             the world.
           </h1>
-          <p className="text-black text-md leading-relaxed">
+          <p className="text-black text-sm md:text-lg leading-relaxed">
             Aegean’s portfolio showcases an emerging array of technology
             companies that are at the forefront of artificial intelligence,
             machine learning, and software development. These companies are
@@ -25,7 +25,7 @@ const Portfolio = () => {
             systems that power global enterprises, our investments reflect a
             commitment to backing category-defining technologies.
           </p>
-          <p className="text-black leading-relaxed">
+          <p className="text-black text-sm md:text-lg leading-relaxed">
             Each company in our portfolio represents a unique solution to a
             significant market need. Some are creating the AI tools that
             businesses rely on to predict market trends or optimize operations,
@@ -39,7 +39,7 @@ const Portfolio = () => {
         </div>
 
         <div className="mt-12">
-        <div className=" w-full py-32 -mt-32 relative overflow-hidden">
+        <div className=" w-full mt-16 relative overflow-hidden">
           <div className="slider-track">
             <div className="slider-content">
               <span className="slider-item">Wave</span>
@@ -69,7 +69,7 @@ const Portfolio = () => {
       </div> */}
       {/* Added `mt-6` to create space between the divider and the footer */}
   
-      <div className=" mt-48">
+      <div className=" mt-36">
         <Footer />
       </div>
     </div>

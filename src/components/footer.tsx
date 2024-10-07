@@ -7,7 +7,7 @@ const Footer = () => {
    <div className="px-7 mb-12">
    <Image src={mobileLogo} alt="image" className=" w-20"></Image>
    </div>
-      <div className="flex flex-col font-mono lg:flex-row md:gap-96 px-8 items-start">
+      <div className="flex flex-col font-mono lg:flex-row md:gap-96 px-[1.9rem] items-start">
         {/* Logo Section */}
         <div className="hidden md:flex flex-col items-start space-y-6">
           <ul className="space-y-2 text-sm">
