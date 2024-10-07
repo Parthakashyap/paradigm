@@ -7,7 +7,7 @@ const Careers = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const jobsPerPage = 5;
+  const jobsPerPage = 10;
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -83,6 +83,72 @@ const Careers = () => {
       image:
         "https://cdn.getro.com/companies/b17eed59-4cc2-5c86-86c9-5071008a3543",
     },
+    {
+      title: "Founding Engineer - Full Stack",
+      company: "Shadow",
+      image:
+        "https://cdn.getro.com/companies/4a296f64-868a-57c0-a6f0-c40bca6b785a",
+    },
+    {
+      title: "Senior Software Engineer",
+      company: "Ellipsis Labs",
+      image:
+        "https://cdn.getro.com/companies/6104d42c-cc40-5e82-bc85-7f199a499e60",
+    },
+    {
+      title: "Software Engineer Full stack",
+      company: "Conduit",
+      image:
+        "https://cdn.getro.com/companies/40d67ff1-6195-5d22-b4c8-f3d6fc21ac3a-1726402513",
+    },
+    {
+      title: "Software Engineer, SRE/DEVOPS",
+      company: "Conduit",
+      image:
+        "https://cdn.getro.com/companies/40d67ff1-6195-5d22-b4c8-f3d6fc21ac3a-1726402513",
+    },
+    {
+      title: "Senior Backend Developer",
+      company: "Fireblocks",
+      image:
+        "https://cdn.getro.com/companies/22717ee0-86c4-5e51-a11d-ffb9ad0eccb0",
+    },
+    {
+      title: "Talent Acquisition Lead",
+      company: "MatrixPort",
+      image:
+        "https://cdn.getro.com/companies/db7bc878-869c-59c6-bcc6-cb28cba69cf9",
+    },
+    {
+      title: "Sales Busisness Development Manager",
+      company: "MatrixPort",
+      image:
+        "https://cdn.getro.com/companies/db7bc878-869c-59c6-bcc6-cb28cba69cf9",
+    },
+    {
+      title: "Cyber Security Engineer ",
+      company: "MatrixPort",
+      image:
+        "https://cdn.getro.com/companies/db7bc878-869c-59c6-bcc6-cb28cba69cf9",
+    },
+    {
+      title: "Product Manger ",
+      company: "MatrixPort",
+      image:
+        "https://cdn.getro.com/companies/db7bc878-869c-59c6-bcc6-cb28cba69cf9",
+    },
+    {
+      title: "Product Marketing Manger",
+      company: "Bitso",
+      image:
+        "https://cdn.getro.com/companies/75e9d07f-a052-52dd-85c3-868d31d10c97",
+    },
+    {
+      title: "Investigation Specialist",
+      company: "Bitso",
+      image:
+        "https://cdn.getro.com/companies/75e9d07f-a052-52dd-85c3-868d31d10c97",
+    },
   ];
 
   // Calculate total pages
@@ -93,7 +159,7 @@ const Careers = () => {
   const indexOfFirstJob = indexOfLastJob - jobsPerPage;
   const currentJobs = jobs.slice(indexOfFirstJob, indexOfLastJob);
 
-  const paginate = (pageNumber:number) => setCurrentPage(pageNumber);
+  const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
   return (
     <div>
@@ -101,14 +167,14 @@ const Careers = () => {
       <div className="flex flex-col lg:flex-row p-2 md:pt-24 pt-10 bg-white min-h-screen font-mono">
         {/* Left Sidebar for large screens */}
         {!isMobile && (
-          <div className="w-full lg:w-1/4 p-4">
-            {/* Sidebar content */}
-          </div>
+          <div className="w-full lg:w-1/4 p-4">{/* Sidebar content */}</div>
         )}
 
         {/* Right Content Section */}
         <div className="w-full lg:w-3/4  md:p-8 pl-0 lg:pl-32">
-          <h2 className=" text-black -mt-4 md:hidden font-bold mb-2">Careers</h2>
+          <h2 className=" text-black -mt-4 md:hidden font-bold mb-2">
+            Careers
+          </h2>
           <p className="text-[.9rem] font-bold md:hidden  text-black mb-4">
             Browse through careers and opportunities in the Aegean Capital
             universe.
