@@ -52,11 +52,11 @@ const Footer = () => {
               COLLABORATE
             </Link>
             <Link href={"/careers"} className="font-bold">
-              CARRERS
+              CAREERS
             </Link>
           </div>
           <div className="flex flex-col space-y-2">
-            <Link href={"/contact"} className="font-bold">
+            <Link href={"/contact-us"} className="font-bold">
               CONTACT
             </Link>
           </div>
@@ -93,9 +93,7 @@ const Footer = () => {
       {/* Footer Bottom Section */}
       <div className="mt-10 px-8 text-[.75rem] font-mono text-left">
         <p>
-          Copyright © 2024 Aegean Operations LP All rights reserved. “Aegean” is
-          a trademark, and the Traingular mobius symbol to be changed to custom
-          red AI symbol
+        Copyright ©️ 2024 Aegean Operations LP All rights reserved. “Aegean” is a trademark and the custom red AI symbol is a registered trademark of Aegean Operations LP
         </p>
       </div>
     </footer>

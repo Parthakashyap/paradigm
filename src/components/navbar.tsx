@@ -29,7 +29,7 @@ const Navbar = () => {
     >
       <nav className={`text-white  md:text-black`}>
         {/* Wrapper */}
-        <div className="flex bg-white justify-between items-center px-8  py-4 fixed top-0 left-0 right-0 z-50">
+        <div className="flex bg-white justify-between items-center px-6  py-4 fixed top-0 left-0 right-0 z-50">
           {/* Logo */}
           <Link href="/home" className="flex items-center space-x-2">
             <div className="flex gap-0 justify-center items-center">
@@ -116,7 +116,7 @@ const Navbar = () => {
         {/* Collapsible Mobile Menu (visible on small screens) */}
         {isOpen && (
           <div className="fixed inset-0 z-50 flex flex-col  items-start bg-black text-white w-full h-full transition-all duration-300">
-            <div className="flex gap-0 items-center py-[1.31rem] px-[2.1rem]">
+            <div className="flex gap-0 items-center py-[1.31rem] px-[1.6rem]">
               <Image src={mobileLogo} alt="mobilelogo" className=" w-14"></Image>
               {/* <Link
                 href="/home"
@@ -127,7 +127,7 @@ const Navbar = () => {
             </div>
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute top-6 scale-90  right-6 text-white text-3xl"
+              className="absolute top-7 scale-75 right-6 text-white text-3xl"
             >
               &#10005;
             </button>
@@ -158,7 +158,7 @@ const Navbar = () => {
                 className="hover:underline transition"
                 onClick={() => setIsOpen(false)}
               >
-                CARRERS
+                CAREERS
               </Link>
               <Link
                 href="/contact-us"

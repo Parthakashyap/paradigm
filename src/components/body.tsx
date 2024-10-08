@@ -49,7 +49,7 @@ const Body = () => {
               className="px-2 py-1 rounded-md text-black font-extralight text-[5px] md:text-[10px] bg-black/10 uppercase link-cover"
               href="#"
             >
-              Colaborate with us
+              Collaborate with us
             </a>
             <svg
               width="12"
@@ -148,7 +148,7 @@ const Body = () => {
               className="px-2 py-1 rounded-md text-black font-extralight text-[7px] md:text-[10px] bg-black/10 uppercase link-cover"
               href="#"
             >
-              Colaborate with us
+              Collaborate with us
             </a>
             <svg
               width="12"

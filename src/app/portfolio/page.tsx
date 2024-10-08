@@ -9,14 +9,14 @@ const Portfolio = () => {
 
       {/* Added `flex-grow` to make the content take available vertical space */}
       <div className="bg-white pt-4 flex-grow">
-        <div className="flex justify-center items-start flex-col mx-auto w-full md:max-w-3xl p-4 md:p-10 space-y-6">
+        <div className="flex justify-center items-start flex-col mx-auto w-full md:max-w-3xl p-7 md:p-10 space-y-6">
           <h1
-            className={` text-[1.5rem]  md:text-4xl font-serif text-black leading-tight ${openSans.className}`}
+            className={` text-4xl  md:text-4xl font-serif text-black leading-tight `}
           >
             Aegean believes that intelligent software will power the future of
             the world.
           </h1>
-          <p className="text-black text-sm md:text-lg leading-relaxed">
+          <p className="text-black text-lg leading-relaxed">
             Aegean’s portfolio showcases an emerging array of technology
             companies that are at the forefront of artificial intelligence,
             machine learning, and software development. These companies are
@@ -25,7 +25,7 @@ const Portfolio = () => {
             systems that power global enterprises, our investments reflect a
             commitment to backing category-defining technologies.
           </p>
-          <p className="text-black text-sm md:text-lg leading-relaxed">
+          <p className="text-black text-lg leading-relaxed">
             Each company in our portfolio represents a unique solution to a
             significant market need. Some are creating the AI tools that
             businesses rely on to predict market trends or optimize operations,
