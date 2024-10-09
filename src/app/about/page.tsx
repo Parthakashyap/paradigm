@@ -15,21 +15,21 @@ const About = () => {
           <h1 className={` text-4xl  font-serif text-black leading-tight`}>
             Aegean is a research-driven technology investment firm.
           </h1>
-          <p className="text-black  text-lg leading-tight">
+          <p className="text-black  text-lg leading-relaxed">
             We focus on artificial intelligence and machine learning related
             technologies at the frontier. We invest in, build, and contribute to
             companies and ideas by writing cheques ranging from $100,000 to $25M.
             We often get involved at the earliest stage of innovation and continue
             to support our portfolio companies over time.
           </p>
-          <p className="text-black text-lg leading-tight">
+          <p className="text-black text-lg leading-relaxed">
             Aegean invests primarily in technology and software companies and
             takes an approach to help companies reach their full growth potential
             from the technical (mechanism, design, security, engineering) to the
             operational (recruiting, go-to-market strategy, legal, and regulatory
             strategy).
           </p>
-          <p className="text-black text-lg leading-tight">
+          <p className="text-black text-lg leading-relaxed">
             Aegean only invests in early-stage technology companies that have
             demonstrated product-market fit and are ready to transition from
             founder-led growth to go-to-market machine. We partner with founders
