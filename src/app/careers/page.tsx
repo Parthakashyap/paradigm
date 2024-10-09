@@ -232,7 +232,7 @@ const Careers = () => {
 
           {/* Filter By Button for mobile */}
           {isMobile && (
-            <div className="relative mb-6 w-full">
+            <div className="relative mb-6 w-full mt-8">
               <button
                 onClick={toggleDropdown}
                 className="w-full bg-gray-100  border border-gray-300 text-black p-3 flex justify-between items-center"
