@@ -1,8 +1,16 @@
-
+import Image from "next/image";
+import logo from "@/Images/ai (1).png";
+import Link from "next/link";
 const Contact = () => {
     return (
         <div className="w-full min-h-screen bg-white">
+        <Link href={"/home"} className=" gap-0 items-center py-[1.31rem] px-[1.6rem] hidden md:block">
+        <Image alt="logo" src={logo} className="  w-14 md:w-12 " />
+        </Link>
         <div className="md:pt-20">
+        <Link href={"/home"} className="flex gap-0 items-center py-[1.31rem] px-[1.6rem] md:hidden">
+        <Image alt="logo" src={logo} className=" w-14 md:w-12  " />
+        </Link>
         <div className="flex  flex-col lg:flex-row items-start lg:items-start h-auto lg:h-screen p-6 lg:p-10 pt-20">
             {/* Left Section - Contact Title */}
             <div className="text-left text-black/20 font-serif text-3xl lg:text-4xl lg:pr-56 mb-10 lg:mb-0">
