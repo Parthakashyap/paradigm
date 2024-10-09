@@ -7,13 +7,13 @@ const collaborate = () => {
     <div className="w-full min-h-screen bg-white flex flex-col justify-between">
       <Navbar />
 
-      {/* Added `flex-grow` to make the content take available vertical space */}
+      {/* Added `flex-grow` to make the content take avAIlable vertical space */}
       <div className="bg-white pt-4 flex-grow">
         <div className="flex justify-center items-start flex-col mx-auto w-full md:max-w-3xl p-7 md:p-10 space-y-6">
           <h1
             className={` text-4xl  md:text-4xl  text-black leading-tight font-serif`}
           >
-            Aegean is a research- driven ai investment firm.
+            Aegean is a research- driven AI investment firm.
           </h1>
           <p className="text-black text-lg leading-relaxed">
             We live on the frontier and believe in progress through technology.
@@ -24,9 +24,9 @@ const collaborate = () => {
           </p>
           <p className="text-black text-lg leading-relaxed">
             We're builders, not just investors. Many of us have worked on tools,
-            protocols, and companies that are now some of the most used in ai.
-            We build software, much of it open source, that aims to advance the
-            frontier of ai for everyone.
+            protocols, and companies that are now some of the most used in AI.
+            We build software, much of it open source, that AIms to advance the
+            frontier of AI for everyone.
           </p>
           <p className="text-black text-lg leading-relaxed">
             Research is at the core of everything we do. We believe depth is a
